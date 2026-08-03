@@ -32,8 +32,8 @@ latest_posts:
   }
 </style>
 
-Wajdi Alnoush
-Postdoc <a href='#'>Affiliations</a>.<br> Address.
+Wajdi Alnoush <br>
+Postdoc <a href='#'>Employer</a>.<br>
 Previously: CC <a href='https://co2cert.com/'>@CO2CERT</a>, PhD <a href='https://www.mcmaster.ca/'>@McMasterU</a> , MSc and BSc <a href='https://www.tamu.edu/'>@TAMU</a>  Link to [subreddit](https://www.reddit.com). You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 T use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below.
