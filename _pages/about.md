@@ -2,9 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postfoc <a href='#'>Affiliations</a>.
-<br>
-Address. Contacts. Motto. Etc.
+subtitle: Postdoc <a href='#'>Affiliations</a>.<br> Address. Contacts. Motto. Et
 Previously: CC <a href='#'>@PrevCompany</a>, Postdoc <a href='#'>@PrevCompany</a>
 
 profile:
