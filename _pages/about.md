@@ -32,7 +32,7 @@ latest_posts:
   }
 </style>
 
-Wajdi Alnoush <br>
+<span style="font-size: 2rem; font-weight: 700; display: block; margin-bottom: 0.5rem;">Wajdi Alnoush</span> <br>
 Postdoc <a href='#'>@Employer</a>.<br>
 Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
 PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a><br>  
