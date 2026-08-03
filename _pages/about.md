@@ -34,10 +34,11 @@ latest_posts:
 
 Wajdi Alnoush <br>
 Postdoc <a href='#'>@Employer</a>.<br>
-Previously: CC <a href='https://co2cert.com/'>@CO2CERT</a>, PhD <a href='https://www.mcmaster.ca/'>@McMasterU</a> , MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>  Link to [subreddit](https://www.reddit.com). disable any of these elements in  `profile` property of `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. <br><br>
+Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate a href='https://www.tamu.edu/'>@TAMU</a> <br>
+PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>  Link to [subreddit](https://www.reddit.com). dis/enable these elements in `profile` property of `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. <br><br>
 
 
-<br><br><br>
+<br><br>
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
   <h4>About</h4>
     <p>
