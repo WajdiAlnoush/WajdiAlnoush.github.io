@@ -39,10 +39,8 @@ Previously: CC <a href='https://co2cert.com/'>@CO2CERT</a>, PhD <a href='https:/
 T use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below.
 
 
-#div class="card mt-3"> 
-#div class="card-body"> 
-#h4 class="card-title">About
-<div style="border: 1px solid #ffffff; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
+<br>
+<div style="border: 0.5px solid #ffffff; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
   <h4>About</h4>
     <p>
       I am a researcher working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific illustration, and dataViz.
@@ -52,5 +50,4 @@ T use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://j
     <hr style="border-color: rgba(255,255,255,0.3)">
     <h4 class="card-title">Recent publications</h4>
     {% include selected_papers.liquid %}
-  #/div>
 </div>
