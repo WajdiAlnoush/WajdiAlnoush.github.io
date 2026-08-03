@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoc <a href='#'>Affiliations</a>.<br> Address. Contacts. Motto. Et
-Previously: CC <a href='#'>@PrevCompany</a>, Postdoc <a href='#'>@PrevCompany</a>
+subtitle: ""
 
 profile:
   align: left
@@ -28,8 +27,22 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am researcher working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific illustration, and dataViz. Link to your favorite [subreddit](https://www.reddit.com). 
+Postdoc <a href='#'>Affiliations</a>.<br> Address. Contacts. Motto. Et
+Previously: CC <a href='#'>@PrevCompany</a>, Postdoc <a href='#'>@PrevCompany</a> I am researcher working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific illustration, and dataViz. Link to your favorite [subreddit](https://www.reddit.com). You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h4 class="card-title">About</h4>
+    <p>
+      I am a researcher working at the intersection of chemical engineering, materials science, and data science.
+      I co-created and maintain <a href="#">OpenPNM</a> and <a href="#">PoreSpy</a>, along with several other
+      open-source projects. Lately I've been focusing on how machine learning can speed up PDE solvers.
+    </p>
+    <hr>
+    <h4 class="card-title">Recent publications</h4>
+    {% include selected_papers.liquid %}
+  </div>
+</div>
