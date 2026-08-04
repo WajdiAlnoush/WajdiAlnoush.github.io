@@ -39,7 +39,6 @@ latest_posts:
 <span style="font-size: 1rem; font-weight: 470;">Postdoc <a href='#'>@Employer</a><br>
 <span>
 
-
 <span style="font-size: 1rem; font-weight: 470;">Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
 PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a> </span style="color: #9ca3af;"> 
 <br><br> -->
@@ -56,18 +55,6 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 </div>
 <br>
 
-
-<div style="margin-left: -60px;">
-  <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
-  <span style="font-size: 1rem; font-weight: 470;">
-    Postdoc <a href='#'>@Employer</a><br>
-    <span style="color: #9ca3af;">
-      Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
-      PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
-    </span>
-  </span>
-</div>
-
 <div style="margin-top: 1rem; margin-bottom: 1.5rem;">
   <a href="mailto:your.email@example.com" style="margin-right: 12px; font-size: 1.4rem;"><i class="fas fa-envelope"></i></a>
   <a href="https://github.com/WajdiAlnoush" style="margin-right: 12px; font-size: 1.4rem;"><i class="fab fa-github"></i></a>
@@ -75,8 +62,6 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   <a href="/feed.xml" style="margin-right: 12px; font-size: 1.4rem;"><i class="fas fa-rss"></i></a>
   <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 12px; font-size: 1.4rem;"><i class="ai ai-google-scholar"></i></a>
 </div>
-
-
 
 
 
