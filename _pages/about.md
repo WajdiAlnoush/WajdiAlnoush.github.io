@@ -31,7 +31,8 @@ latest_posts:
   .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important; margin-right: 0 !important;}
   img[src*="prof_pic"] {
     width: 160px !important;
-    height: 160px !important;}
+    height: 160px !important;
+    display: block !important}
   .profile.float-left {margin-right: 0 !important;}
 </style>
 
