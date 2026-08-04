@@ -28,11 +28,11 @@ latest_posts:
 ---
 <style>
   .post-header {display: none;}
+  .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important; }
   img[src*="prof_pic"] {
     width: 160px !important;
     height: 160px !important;}
   .profile.float-left {margin-right: 0 !important;}
-  .profile.float-left figure {margin: 0 !important;}
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
