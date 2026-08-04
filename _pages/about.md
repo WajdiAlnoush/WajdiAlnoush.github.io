@@ -47,10 +47,10 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <div style="margin-left: -60px;">
   <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
   <span style="font-size: 1rem; font-weight: 470;">
-    Postdoc <a href='#' style="color: inherit;">@Employer</a><br>
+    Postdoc <a href='#'>@Employer</a><br>
     <span style="color: #9ca3af;">
-      Previously: Visiting Research Scientist <a href='https://co2cert.com/' style="color: #9ca3af;">@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/' style="color: #9ca3af;">@TAMU</a> <br>
-      PhD <a href='https://www.mcmaster.ca/' style="color: #9ca3af;">@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/' style="color: #9ca3af;">@TAMU</a>
+      Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
+      PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
     </span>
   </span>
 </div>
