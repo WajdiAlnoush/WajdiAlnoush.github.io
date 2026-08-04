@@ -46,7 +46,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <div style="margin-left: -60px;">
   <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
   <span style="font-size: 1rem; font-weight: 400;">
-    Postdoc <a href='#'>@Employer</a><br>
+    Postdoc Fellow <a href='#'>@Employer</a><br>
     <span style="color: #9ca3af;">
       Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
       PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
@@ -55,12 +55,12 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 </div>
 
 
-<div style="margin-top: 1rem; margin-bottom: 1.5rem;">
-  <a href="mailto:your.email@example.com" style="margin-right: 9px; font-size: 1.8rem;"><i class="fas fa-envelope"></i></a>
-  <a href="https://github.com/WajdiAlnoush" style="margin-right: 9px; font-size: 1.8rem;"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/your-profile" style="margin-right: 9px; font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
-  <a href="/feed.xml" style="margin-right: 9px; font-size: 1.8rem;"><i class="fas fa-rss"></i></a>
-  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 9px; font-size: 1.8rem;"><i class="ai ai-google-scholar"></i></a>
+<div style="margin-top: 0.8rem; margin-bottom: 1rem;">
+  <a href="mailto:your.email@example.com" style="margin-right: 7px; font-size: 1.8rem;"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/WajdiAlnoush" style="margin-right: 7px; font-size: 1.8rem;"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/your-profile" style="margin-right: 7px; font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
+  <a href="/feed.xml" style="margin-right: 7px; font-size: 1.8rem;"><i class="fas fa-rss"></i></a>
+  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 7px; font-size: 1.8rem;"><i class="ai ai-google-scholar"></i></a>
 </div>
 
 
