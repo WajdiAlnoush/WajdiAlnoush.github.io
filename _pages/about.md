@@ -76,8 +76,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 12px; font-size: 1.4rem;"><i class="ai ai-google-scholar"></i></a>
 </div>
 
-<div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
-  ...
+
 
 
 
