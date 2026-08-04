@@ -28,7 +28,7 @@ latest_posts:
 ---
 <style>
   .post-header {display: none;}
-  .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important; }
+  .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important; margin-right: 0 !important;}
   img[src*="prof_pic"] {
     width: 160px !important;
     height: 160px !important;}
