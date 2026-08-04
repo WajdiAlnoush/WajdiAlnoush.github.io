@@ -14,7 +14,7 @@ profile:
     #<p>ON, Canada</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -30,8 +30,8 @@ latest_posts:
   .post-header {
     display: none;}
   img[src*="prof_pic"] {
-    width: 170px !important;
-    height: 170px !important;  
+    width: 168px !important;
+    height: 168px !important;  
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
@@ -54,7 +54,32 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
     </span>
   </span>
 </div>
-<br><br>
+<br>
+
+
+<div style="margin-left: -60px;">
+  <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
+  <span style="font-size: 1rem; font-weight: 470;">
+    Postdoc <a href='#'>@Employer</a><br>
+    <span style="color: #9ca3af;">
+      Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
+      PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
+    </span>
+  </span>
+</div>
+
+<div style="margin-top: 1rem; margin-bottom: 1.5rem;">
+  <a href="mailto:your.email@example.com" style="margin-right: 12px; font-size: 1.4rem;"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/WajdiAlnoush" style="margin-right: 12px; font-size: 1.4rem;"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/your-profile" style="margin-right: 12px; font-size: 1.4rem;"><i class="fab fa-linkedin"></i></a>
+  <a href="/feed.xml" style="margin-right: 12px; font-size: 1.4rem;"><i class="fas fa-rss"></i></a>
+  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 12px; font-size: 1.4rem;"><i class="ai ai-google-scholar"></i></a>
+</div>
+
+<div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
+  ...
+
+
 
 <br>
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
