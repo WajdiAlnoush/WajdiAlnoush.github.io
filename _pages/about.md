@@ -30,8 +30,8 @@ latest_posts:
   .post-header {
     display: none;}
   img[src*="prof_pic"] {
-    width: 160px !important;
-    height: 160px !important;  
+    width: 170px !important;
+    height: 170px !important;  
 </style>
 
 <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
@@ -41,7 +41,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <br><br>
 
 
-<br><br>
+<br>
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
   <h4 style="font-size: 1.5rem; font-weight: 700;">About</h4>
     <p style="font-size: 1.05rem; font-weight: 510;">
