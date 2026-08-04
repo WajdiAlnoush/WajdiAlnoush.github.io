@@ -26,14 +26,23 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-<style>
+<!-- <style>
   .post-header {display: none;}
   .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important; margin-right: 0 !important;}
+  @media (min-width: 576px) {
+    .profile {width: 160px !important;}}
   img[src*="prof_pic"] {
     width: 160px !important;
     height: 160px !important;
     display: block !important}
   .profile.float-left {margin-right: 0 !important;}
+</style> -->
+<style>
+  .post-header {display: none;}
+  @media (min-width: 576px) {
+    .profile {width: 160px !important;}}
+  .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important;}
+  img[src*="prof_pic"] {width: 160px !important; height: 160px !important; display: block !important;}
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
