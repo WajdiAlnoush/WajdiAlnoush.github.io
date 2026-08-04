@@ -48,7 +48,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
   <span style="font-size: 1.05rem; font-weight: 400;">
     Postdoctoral Research Fellow <a href='#'>@Employer</a><br>
-    <span style="color: #8b93a1;">
+    <span style="color: #7c8591;">
       Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
       PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
     </span>
