@@ -74,5 +74,5 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
     <hr style="border-color: rgba(255,255,255,0.3)">
     <h4 style="font-size: 1.5rem; font-weight: 700;" class="card-title"><br>Recent publications</h4>
     <!-- {% include selected_papers.liquid %} -->
-    {% bibliography --query @*[selected=true] %}
+    {% bibliography --query @*[selected=true] --limit 3 %}
 </div>
