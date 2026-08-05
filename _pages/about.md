@@ -64,7 +64,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 </div>
 
 
-<div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent;">
+<div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent; clear: both;">
   <h4 style="font-size: 1.5rem; font-weight: 700;">About</h4>
     <p style="font-size: 1.05rem; font-weight: 390;">
       I am a researcher working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific illustration, and dataViz.
@@ -73,6 +73,6 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
     </p>
     <hr style="border-color: rgba(255,255,255,0.3)">
     <h4 style="font-size: 1.5rem; font-weight: 700;" class="card-title"><br>Recent publications</h4>
-    {% include selected_papers.liquid %}
+    {% include selected_papers.liquid --limit 3 %}
     
 </div>
