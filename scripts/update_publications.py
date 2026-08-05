@@ -3,7 +3,7 @@ import requests
 
 ORCID = "0000-0002-6089-032X"
 HEADERS = {"Accept": "application/json"}
-BIB_PATH = "_bibliography/papers.bib"
+BIB_PATH = "_bibliography/papers_wajdi.bib"
 NUM_SELECTED = 5  # how many recent papers to flag selected={true}
 
 # -----------------------------

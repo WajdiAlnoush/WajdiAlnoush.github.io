@@ -347,7 +347,7 @@ scholar:
 
   style: apa
   locale: en
-
+  
   source: /_bibliography/
   bibliography: papers_wajdi.bib
   bibliography_template: bib
