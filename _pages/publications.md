@@ -18,5 +18,6 @@ nav_order: 2
 {% include bib_search.liquid %}
 <!-- {% bibliography %} -->
 <!-- {% bibliography --query @*[selected=true] %} -->
+<!-- {% bibliography --query @*[selected=true] --limit 3 %} -->
 
 </div>
