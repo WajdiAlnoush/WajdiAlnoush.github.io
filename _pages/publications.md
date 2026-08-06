@@ -11,20 +11,7 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
-<style>
-  .bibliography .col-sm-2.abbr {display: none !important;}
-  .bibliography .col-sm-8 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;}
 
-  .publications {
-    border: 0.4px solid #6b7280;
-    border-radius: 10px;
-    padding: 1.5rem;
-    background-color: transparent;}
-
-</style>
 
 <div class="publications">
   {% bibliography %}
