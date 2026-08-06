@@ -33,6 +33,8 @@ latest_posts:
     .profile {width: 180px !important;}}
   .profile.float-left figure {width: 160px !important; height: 160px !important; margin: 0 !important;}
   img[src*="prof_pic"] {width: 160px !important; height: 160px !important; display: block !important;}
+  .bibliography .col-sm-2.abbr {display: none !important;}
+  .bibliography .col-sm-8 {flex: 0 0 100% !important; max-width: 100% !important; width: 100% !important;}
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
