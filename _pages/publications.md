@@ -20,10 +20,8 @@ nav_order: 2
 
   .publications {
     border: 0.4px solid #6b7280;
-    border-radius: 10px;
-    padding: 1.5rem;
+    border-radius: 10px; padding: 1.5rem;
     background-color: transparent;}
-
 </style>
 
 <div class="publications">
