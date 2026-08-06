@@ -29,7 +29,6 @@ nav_order: 2
     background-color: transparent;}
 </style>
 
-
 <div class="publications">
     {% bibliography %}
 </div>
