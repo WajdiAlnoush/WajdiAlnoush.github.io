@@ -19,9 +19,9 @@ nav_order: 2
     max-width: 100% !important;
     width: 100% !important;}
 
-  /* 1. Title links match the site's link blue */
+  /* 1. Title links match the site's link blue
   .bibliography .title,
-  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important;}
+  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important;} */
 
   /* 2. Frame around the whole publications block */
   .publications {
