@@ -19,5 +19,4 @@ nav_order: 2
 
 <!-- {% bibliography --query @*[selected=true] %} -->
 
-
 </div>
