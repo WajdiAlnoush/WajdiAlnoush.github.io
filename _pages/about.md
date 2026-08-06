@@ -39,6 +39,7 @@ latest_posts:
   .bibliography .title a {
     color: var(--global-theme-color, #4fc3f7) !important;
     font-size: 1.1rem !important; font-weight: 600 !important;}
+    
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
