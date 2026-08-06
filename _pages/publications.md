@@ -11,6 +11,7 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
+<<<<<<< HEAD
 <style>
   .bibliography .col-sm-2.abbr {display: none !important;}
   .bibliography .col-sm-8 {
@@ -23,7 +24,12 @@ nav_order: 2
     border-radius: 10px; padding: 1.5rem;
     background-color: transparent;}
 </style>
+=======
+
+>>>>>>> parent of b1985ac9 (bb)
 
 <div class="publications">
-  {% bibliography %}
+
+
+
 </div>
