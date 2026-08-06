@@ -18,8 +18,8 @@ nav_order: 2
     max-width: 100% !important;
     width: 100% !important;}
 
-  /* .bibliography .title,
-  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important;} */
+  .bibliography .title,
+  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important;} 
 
   .publications {
     border: 0.4px solid #6b7280;
