@@ -9,6 +9,8 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+<!-- Bibsearch Feature -->
+
 <style>
   .bibliography .col-sm-2.abbr {display: none !important;}
   .bibliography .col-sm-8 {
@@ -23,8 +25,6 @@ nav_order: 2
     background-color: transparent;}
 
 </style>
-<!-- Bibsearch Feature -->
-
 
 <div class="publications">
   {% bibliography %}
