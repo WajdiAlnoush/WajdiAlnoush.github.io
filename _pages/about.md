@@ -38,7 +38,7 @@ latest_posts:
   .bibliography .title,
   .bibliography .title a {
     color: var(--global-theme-color, #4fc3f7) !important;
-    font-size: 1.1rem !important; font-weight: 600 !important;}
+    font-size: 1.15rem !important; font-weight: 625 !important;}
     
 </style>
 

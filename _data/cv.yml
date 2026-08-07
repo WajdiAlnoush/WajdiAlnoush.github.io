@@ -23,25 +23,35 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
+      - institution: McMaster University
+        location: ON, Canada
         url: https://www.uzh.ch/
-        area: Physics
+        area: Chemical Engineering
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
+        start_date: 2020
+        end_date: 2026
         score: ""
         courses: "Theory of Relativity"
         highlights:
           - Description 1.
           - Description 2.
 
-      - institution: Eidgenössische Technische Hochschule
+      - institution: Texas A&M University
         location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+        area: Chemical Engineering
+        studyType: Master of Science (MSc)
+        start_date: 2016
+        end_date: 2018
+        highlights:
+          - Description 1.
+          - Description 2.
+
+      - institution: Texas A&M University
+        location: Zurich, Switzerland
+        area: Chemical Engineering
+        studyType: Bachelor of Science (BSc)
+        start_date: 2011
+        end_date: 2016
         highlights:
           - Description 1.
           - Description 2.

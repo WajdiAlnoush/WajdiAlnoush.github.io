@@ -19,8 +19,10 @@ nav_order: 2
     width: 100% !important;}
 
   .bibliography .title,
-  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important; font-size: 1.1rem !important;
-    font-weight: 600 !important;} 
+  .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important; font-size: 1.15rem !important;
+    font-weight: 625 !important;} 
+
+  h2.bibliography {font-weight: 600 !important;}
 
   .publications {
     border: 0.4px solid #6b7280;

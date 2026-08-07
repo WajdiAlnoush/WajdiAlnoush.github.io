@@ -4,7 +4,7 @@ import requests
 ORCID = "0000-0002-6089-032X"
 HEADERS = {"Accept": "application/json"}
 BIB_PATH = "_bibliography/papers_wajdi.bib"
-NUM_SELECTED = 5  # how many recent papers to flag selected={true}
+NUM_SELECTED = 4  # how many recent papers to flag selected={true}
 
 # -----------------------------
 # Retrieve publications from ORCID
@@ -33,13 +33,21 @@ for work in works:
         if credit_name and "value" in credit_name:
             authors.append(credit_name["value"])
 
-    papers.append({
-        "title": title,
-        "journal": journal,
-        "year": int(year) if year.isdigit() else 0,
-        "doi": doi,
-        "authors": authors,
-    })
+# Fallback: if ORCID didn't supply author names, fetch them from Crossref using the DOI
+    if not authors and doi:
+        try:
+            cr = requests.get(f"https://api.crossref.org/works/{doi}", headers=HEADERS, timeout=10).json()
+            cr_authors = cr.get("message", {}).get("author", [])
+            for a in cr_authors:
+                given = a.get("given", "")
+                family = a.get("family", "")
+                full_name = f"{given} {family}".strip()
+                if full_name:
+                    authors.append(full_name)
+        except Exception:
+            pass  # leave authors empty if Crossref lookup fails; falls back to "Unknown" downstream
+
+    papers.append({"title": title,"journal": journal,"year": int(year) if year.isdigit() else 0,"doi": doi,"authors": authors,})
 
 # -----------------------------
 # Sort newest first
