@@ -21,7 +21,6 @@ nav_order: 2
   .bibliography .title,
   .bibliography .title a {color: var(--global-theme-color, #4fc3f7) !important; font-size: 1.15rem !important;
     font-weight: 625 !important;} 
-
   h2.bibliography {font-size: 1.4rem !important; font-weight: 600 !important;}
 
   .publications {
