@@ -6,6 +6,15 @@ HEADERS = {"Accept": "application/json"}
 BIB_PATH = "_bibliography/papers_wajdi.bib"
 NUM_SELECTED = 4  # how many recent papers to flag selected={true}
 
+# Manual corrections for known-wrong author names coming from ORCID/Crossref
+# (e.g. misparsed given/family names, publisher typos). Add more pairs as you spot them.
+NAME_CORRECTIONS = {
+    "Wajdi Ahmed": "Wajdi Alnoush",
+}
+ 
+def correct_author_name(name):
+    return NAME_CORRECTIONS.get(name, name)
+
 # -----------------------------
 # Retrieve publications from ORCID
 # -----------------------------
