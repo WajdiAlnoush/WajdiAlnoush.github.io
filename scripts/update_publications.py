@@ -15,6 +15,26 @@ NAME_CORRECTIONS = {
 def correct_author_name(name):
     return NAME_CORRECTIONS.get(name, name)
 
+# Words that should stay lowercase in title case (unless they're the first word)
+LOWERCASE_WORDS = {"a", "an", "the", "of", "and", "or", "for", "in", "on", "at", "to", "with", "via"}
+
+def normalize_journal_name(name):
+    if not name:
+        return name
+    # Only fix names that are ALL CAPS (or close to it) -- leave normally-cased names untouched
+    letters = [c for c in name if c.isalpha()]
+    if not letters or not all(c.isupper() for c in letters):
+        return name
+    words = name.split()
+    result = []
+    for i, word in enumerate(words):
+        lower = word.lower()
+        if i > 0 and lower in LOWERCASE_WORDS:
+            result.append(lower)
+        else:
+            result.append(lower.capitalize())
+    return " ".join(result)
+
 # -----------------------------
 # Retrieve publications from ORCID
 # -----------------------------
@@ -27,7 +47,8 @@ for work in works:
     paper = requests.get(f"https://pub.orcid.org/v3.0/{ORCID}/work/{put_code}", headers=HEADERS).json()
 
     title = paper.get("title", {}).get("title", {}).get("value", "Untitled")
-    journal = paper.get("journal-title", {}).get("value", "")
+    # journal = paper.get("journal-title", {}).get("value", "")
+    journal = normalize_journal_name(paper.get("journal-title", {}).get("value", ""))
     year = paper.get("publication-date", {}).get("year", {}).get("value", "")
 
     doi = ""
