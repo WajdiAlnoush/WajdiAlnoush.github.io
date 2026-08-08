@@ -39,6 +39,16 @@ latest_posts:
   .bibliography .title a {
     color: var(--global-theme-color, #4fc3f7) !important;
     font-size: 1.15rem !important; font-weight: 625 !important;}
+
+
+  .btn.btn-sm.z-depth-0[href*="doi.org"] {
+    border: none !important; background: transparent !important; box-shadow: none !important;
+    font-size: 0; /* hides the "DOI" text */
+    padding: 0 !important;}
+
+  .btn.btn-sm.z-depth-0[href*="doi.org"]::before {
+    font: var(--fa-font-solid);
+    content: "\f35d"; font-size: 1rem; margin-top: 7px;}
     
 </style>
 
