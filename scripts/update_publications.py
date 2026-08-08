@@ -17,10 +17,17 @@ def correct_author_name(name):
 
 # Words that should stay lowercase in title case (unless they're the first word)
 LOWERCASE_WORDS = {"a", "an", "the", "of", "and", "or", "for", "in", "on", "at", "to", "with", "via"}
+JOURNAL_CORRECTIONS = {"methodsx": "MethodsX","acs energy letters": "ACS Energy Letters",}
 
 def normalize_journal_name(name):
     if not name:
         return name
+    
+    # Check manual corrections first (case-insensitive match)
+    override = JOURNAL_CORRECTIONS.get(name.strip().lower())
+    if override:
+        return override
+    
     # Only fix names that are ALL CAPS (or close to it) -- leave normally-cased names untouched
     letters = [c for c in name if c.isalpha()]
     if not letters or not all(c.isupper() for c in letters):
