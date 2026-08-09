@@ -7,13 +7,13 @@ description: This course (CHEMENG 2E04) focuses on the formulation and solution 
 instructor: Dr. Jake Nease and Dr. Stuart Linely
 year: 2020/2021/2024
 term: Fall
-location: Main Campus, Room 301
+# location: Main Campus, Room 301
 time: Tuesdays and Thursdays, 10:00-11:30 AM
 course_id: intro-machine-learning
 schedule:
-  - week: 1
+  - module: 1
     date: Sept 5
-    topic: Course Introduction
+    topic: Linear Systems of Equations
     description: Overview of machine learning, course structure, and expectations.
     materials:
       - name: Syllabus
@@ -21,9 +21,9 @@ schedule:
       - name: Slides
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 2
+  - module: 2
     date: Sept 12
-    topic: Linear Regression
+    topic: Linear System Solutions - Elimination Methods
     description: Introduction to linear regression, gradient descent, and model evaluation.
     materials:
       - name: Lecture Notes
@@ -31,9 +31,9 @@ schedule:
       - name: Assignment 1
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 3
+  - module: 3
     date: Sept 19
-    topic: Classification
+    topic: Linear System Solutions - Iterative Methods
     description: Logistic regression, decision boundaries, and multi-class classification.
     materials:
       - name: Lecture Notes
@@ -41,9 +41,9 @@ schedule:
       - name: Coding Lab
         url: https://github.com/
 
-  - week: 4
+  - module: 4
     date: Sept 26
-    topic: Decision Trees and Random Forests
+    topic: Nonlinear Systems - Formulation and Bracketing
     description: Tree-based methods, ensemble learning, and feature importance.
     materials:
       - name: Lecture Notes
@@ -51,9 +51,9 @@ schedule:
       - name: Assignment 2
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 5
+  - module: 5
     date: Oct 3
-    topic: Support Vector Machines
+    topic: Nonlinear Systems - Open Methods and Multivariate Solutions
     description: Margin maximization, kernel methods, and support vectors.
     materials:
       - name: Lecture Notes
@@ -61,14 +61,14 @@ schedule:
       - name: Review Materials
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 6
+  - module: 6
     date: Oct 10
-    topic: Midterm Exam
+    topic: Curve Fitting - Regression
     description: Covers weeks 1-5.
 
-  - week: 7
+  - module: 7
     date: Oct 17
-    topic: Neural Networks Fundamentals
+    topic: Curve Fitting - Interpolation
     description: Perceptrons, multilayer networks, and backpropagation.
     materials:
       - name: Lecture Notes
@@ -76,9 +76,9 @@ schedule:
       - name: Assignment 3
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 8
+  - module: 8
     date: Oct 24
-    topic: Deep Learning
+    topic: Numerical Differentiation
     description: Convolutional neural networks, recurrent neural networks, and applications.
     materials:
       - name: Lecture Notes

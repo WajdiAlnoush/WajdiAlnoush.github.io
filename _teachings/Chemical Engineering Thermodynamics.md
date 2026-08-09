@@ -2,17 +2,17 @@
 layout: course
 title: Chemical Engineering Thermodynamics
 university: McMaster University
-description: This course (CHEMENG 3D03) provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.
-instructor: Prof. Example
+description: This course (CHEMENG 3D03) discusses the fundamental theories of thermodynamics and their application in chemical engineering processes, with particular focuses on non-ideal and multicomponent systems and on thermodynamic equilibrium analysis.
+instructor: Dr. Vincent Leung
 year: 2022
 term: Fall
-location: Main Campus, Room 301
+# location: Main Campus, Room 301
 time: Tuesdays and Thursdays, 10:00-11:30 AM
 course_id: intro-machine-learning
 schedule:
   - week: 1
     date: Sept 5
-    topic: Course Introduction
+    topic: Basic concepts and laws of thermodynamics
     description: Overview of machine learning, course structure, and expectations.
     materials:
       - name: Syllabus
@@ -22,7 +22,7 @@ schedule:
 
   - week: 2
     date: Sept 12
-    topic: Linear Regression
+    topic: Thermodynamic Properties and Relations
     description: Introduction to linear regression, gradient descent, and model evaluation.
     materials:
       - name: Lecture Notes
@@ -32,7 +32,7 @@ schedule:
 
   - week: 3
     date: Sept 19
-    topic: Classification
+    topic: Vapor-Liquid Equilibrium (VLE)
     description: Logistic regression, decision boundaries, and multi-class classification.
     materials:
       - name: Lecture Notes
@@ -42,7 +42,7 @@ schedule:
 
   - week: 4
     date: Sept 26
-    topic: Decision Trees and Random Forests
+    topic: Solution Theory – Thermodynamic Properties of Mixtures
     description: Tree-based methods, ensemble learning, and feature importance.
     materials:
       - name: Lecture Notes
@@ -52,7 +52,7 @@ schedule:
 
   - week: 5
     date: Oct 3
-    topic: Support Vector Machines
+    topic: Thermodynamics of Mixtures and Mixing
     description: Margin maximization, kernel methods, and support vectors.
     materials:
       - name: Lecture Notes
@@ -62,28 +62,20 @@ schedule:
 
   - week: 6
     date: Oct 10
-    topic: Midterm Exam
+    topic: Chemical Reaction Equilibrium
     description: Covers weeks 1-5.
 
-  - week: 7
-    date: Oct 17
-    topic: Neural Networks Fundamentals
-    description: Perceptrons, multilayer networks, and backpropagation.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
-        url: /assets/pdf/example_pdf.pdf
+  # - week: 7
+  #   date: Oct 17
+  #   topic: Neural Networks Fundamentals
+  #   description: Perceptrons, multilayer networks, and backpropagation.
+  #   materials:
+  #     - name: Lecture Notes
+  #       url: /assets/pdf/example_pdf.pdf
+  #     - name: Assignment 3
+  #       url: /assets/pdf/example_pdf.pdf
 
-  - week: 8
-    date: Oct 24
-    topic: Deep Learning
-    description: Convolutional neural networks, recurrent neural networks, and applications.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
+
 ---
 
 ## Course Overview
@@ -103,12 +95,12 @@ This introductory course on machine learning covers fundamental concepts and alg
 
 ## Textbooks
 
-- Primary: "Machine Learning: A Probabilistic Perspective" by Kevin Murphy
-- Reference: "Pattern Recognition and Machine Learning" by Christopher Bishop
+- J. M. Smith, H. C. Van Ness, M. M. Abbott, and M. T. Swihart, Introduction to Chemical Engineering Thermodynamics, 9th Edn., McGraw-Hill
 
-## Grading
+
+<!-- ## Grading
 
 - Assignments: 40%
 - Midterm Exam: 20%
 - Final Project: 30%
-- Participation: 10%
+- Participation: 10% -->

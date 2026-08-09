@@ -16,7 +16,7 @@ calendar: true
   .teaching-group {margin-bottom: 2.5rem;}
   .teaching-university {font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; border-bottom: 1px solid #6b7280;padding-bottom: 0.5rem;}
   .teaching-course-row {display: flex; flex-wrap: wrap; gap: 1rem;}
-  .teaching-course {border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; flex: 1 1 calc(50% - 0.5rem);
+  .teaching-course {border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.25rem; flex: 1 1 calc(50% - 0.5rem);
     min-width: 280px; box-sizing: border-box;}
   .teaching-course-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7);}
   .teaching-course-meta {color: #9ca3af; font-size: 0.95rem;}

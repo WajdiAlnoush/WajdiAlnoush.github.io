@@ -6,7 +6,7 @@ description: This course (PETE 311) covers the foundational aspects of data scie
 # instructor: Prof. Data
 year: 2019
 term: Spring
-location: Science Building, Room 202
+# location: Science Building, Room 202
 time: Mondays and Wednesdays, 2:00-3:30 PM
 course_id: data-science-fundamentals
 schedule:

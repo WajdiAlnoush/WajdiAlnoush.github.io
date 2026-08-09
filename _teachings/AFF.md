@@ -6,7 +6,7 @@ description: This course provides an introduction to machine learning concepts, 
 instructor: Prof. Example
 year: 2023
 term: Fall
-location: Main Campus, Room 301
+# location: Main Campus, Room 301
 time: Tuesdays and Thursdays, 10:00-11:30 AM
 course_id: intro-machine-learning
 schedule:

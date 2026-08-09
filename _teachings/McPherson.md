@@ -2,12 +2,12 @@
 layout: course
 title: Teaching and Learning Scholar
 university: McMaster University
-description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
+description: The Teaching and Learning Scholar designation is earned through programs offered by the Paul R. MacPherson Institute for Leadership, Innovation and Excellence in Teaching at McMaster University. The certificate is offered to  graduate students, postdoctoral fellows, and sessional faculty who complete structured professional development certificates focused on evidence-based pedagogies and educational research.
 instructor: Paul R. MacPherson Institute
 year: 2024
-term: Spring
-location: Science Building, Room 202
-time: Mondays and Wednesdays, 2:00-3:30 PM
+# term: Spring
+# location: Science Building, Room 202
+# time: Mondays and Wednesdays, 2:00-3:30 PM
 course_id: data-science-fundamentals
 schedule:
   - week: 1
@@ -75,12 +75,14 @@ schedule:
 
 This course provides a comprehensive introduction to data science principles and practices. Students will:
 
-- Learn the end-to-end data science workflow
-- Gain practical experience with data manipulation tools
-- Develop skills in data visualization and communication
-- Apply statistical methods to derive insights from data
 
-## Prerequisites
+- EDUCATN 600 - Essential Skills in Teaching and Learning I
+- EDUCATN 650 - Peer-Evaluated Teaching
+- EDUCATN 700 - Essential Skills in University Teaching II
+- EDUCATN 750 - Principles and Practices of University Teaching 
+- EDUCATN 760 - Self Directed Study
+
+<!-- ## Prerequisites
 
 - Basic programming knowledge (preferably in Python)
 - Introductory statistics
@@ -95,4 +97,4 @@ This course provides a comprehensive introduction to data science principles and
 
 - Assignments: 50%
 - Project: 40%
-- Participation: 10%
+- Participation: 10% -->
