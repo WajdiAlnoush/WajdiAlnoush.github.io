@@ -62,7 +62,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <br><br> -->
 
 <div style="margin-left: 20px;">
-  <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
+  <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.08rem;">Wajdi Alnoush</span>
   <span style="font-size: 1.05rem; font-weight: 400;">
     Postdoctoral Research Fellow <a href='#'>@Employer</a><br>
     <span style="color: #7c8591;">
@@ -72,14 +72,13 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   </span>
 </div>
 
-<div style="margin-top: 0.8rem; margin-bottom: 1rem;">
-  <a href="mailto:your.email@example.com" style="margin-right: 6px; font-size: 1.7rem;"><i class="fas fa-envelope"></i></a>
-  <a href="https://github.com/WajdiAlnoush" style="margin-right: 6px; font-size: 1.7rem;"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/wajdi-alnoush/" style="margin-right: 6px; font-size: 1.7rem;"><i class="fab fa-linkedin"></i></a>
-  <a href="/feed.xml" style="margin-right: 6px; font-size: 1.7rem;"><i class="fas fa-rss"></i></a>
-  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 6px; font-size: 1.7rem;"><i class="ai ai-google-scholar"></i></a>
+<div style="margin-top: 0.45rem; margin-bottom: 1rem;">
+  <a href="mailto:your.email@example.com" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/WajdiAlnoush" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/wajdi-alnoush/" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fab fa-linkedin"></i></a>
+  <a href="/feed.xml" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fas fa-rss"></i></a>
+  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 5px; font-size: 1.7rem;"><i class="ai ai-google-scholar"></i></a>
 </div>
-
 
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent; clear: both;">
   <h4 style="font-size: 1.5rem; font-weight: 700;">About</h4>
@@ -88,8 +87,8 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
       I co-created and maintain <a href="#">Package1</a> and <a href="#">Package2</a>, along with several other
       open-source projects. Lately I've been focusing on how XX can speed up YY.
     </p>
-    <hr style="border-color: rgba(255,255,255,0.3)">
-    <h4 style="font-size: 1.5rem; font-weight: 700;" class="card-title"><br>Recent publications</h4>
+    <hr style="border: none; border-top: 0.4px solid #6b7280; margin: 1rem 0;">
+    <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.8rem;" class="card-title"><br>Recent publications</h4>
     {% include selected_papers.liquid %}
     
 </div>
