@@ -99,6 +99,7 @@ calendar: true
         <li>Custom electrochemical cell design</li>
         <li>Beamline-compatible geometries</li>
         <li>Real-time structural monitoring</li>
+        <li>XX</li>
       </ul>
     </div>
 
@@ -115,6 +116,7 @@ calendar: true
         <li>Rotating disk electrode (RDE) studies</li>
         <li>Impedance spectroscopy</li>
         <li>Operando XAS measurements</li>
+        <li>XX</li>
       </ul>
     </div>
 
@@ -140,9 +142,44 @@ calendar: true
       </ul>
     </div>
 
+  </div>
+</div>
+
+
+<div class="build-section">
+  <div class="build-heading">Growing Interests</div>
+  <div class="build-row">
+
     <div class="build-card">
-      <div class="build-card-title">Acceleration & Automation Pipelines - groowing interest - Self-driving/autonomus labs - Al/ML drived closed loop material discovery</div>
-      <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
+      <div class="build-card-title">Al/ML-driven Material Discovery</div>
+
+      <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
+        <rect x="6" y="8" width="10" height="8" rx="1"/>
+        <rect x="20" y="8" width="10" height="8" rx="1"/>
+        <rect x="34" y="8" width="8" height="8" rx="1"/>
+        <rect x="14" y="28" width="10" height="8" rx="1"/>
+        <line x1="16" y1="12" x2="20" y2="12"/>
+        <line x1="30" y1="12" x2="34" y2="12"/>
+        <line x1="11" y1="16" x2="11" y2="24"/>
+        <line x1="11" y1="24" x2="19" y2="28"/>
+        <line x1="25" y1="16" x2="19" y2="28"/>
+      </svg> -->
+
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
+
+      <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
+      <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>  
+        <li>444</li>
+      </ul>
+    </div>
+
+    <div class="build-card">
+      <div class="build-card-title">Autonomous & Self-driving Labs</div>
+
+      <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="6" y="8" width="10" height="8" rx="1"/>
         <rect x="20" y="8" width="10" height="8" rx="1"/>
         <rect x="34" y="8" width="8" height="8" rx="1"/>
@@ -152,13 +189,14 @@ calendar: true
         <line x1="11" y1="16" x2="11" y2="24" />
         <line x1="11" y1="24" x2="19" y2="28"/>
         <line x1="25" y1="16" x2="19" y2="28"/>
-      </svg>
+      </svg> -->
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
       <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
       <ul>
-        <li>Automated data cleaning</li>
-        <li>EXAFS/XANES fitting</li>
-        <li>High-throughput experiments</li>  
-        <li>Reproducible batch processing</li>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>  
+        <li>444</li>
       </ul>
     </div>
 
