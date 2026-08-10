@@ -32,9 +32,11 @@ calendar: true
     box-sizing: border-box;
   }
   .build-card-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 0.75rem;
+    display: block;
+    width: 260px;
+    height: 240px;
+    object-fit: contain;
+    margin: 1px auto 2px;
   }
   .build-card-title {
     font-size: 1.15rem;
@@ -111,7 +113,7 @@ calendar: true
         <circle cx="28" cy="12" r="1.5" fill="#4fc3f7"/>
         <circle cx="36" cy="26" r="1.5" fill="#4fc3f7"/>
       </svg>
-      <div class="build-card-desc">Electrochemical and spectroscopic platforms for understanding catalyst behavior.</div>
+      <div class="build-card-desc"><u>Electrochemical and spectroscopic platforms for understanding catalyst behavior.</u></div>
       <ul>
         <li>Rotating disk electrode (RDE) studies</li>
         <li>Impedance spectroscopy</li>
@@ -133,7 +135,7 @@ calendar: true
         <line x1="11" y1="24" x2="19" y2="28"/>
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg>
-      <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
+      <div class="build-card-desc"><u>Python-based workflows for processing electrochemical and XAS data.</u></div>
       <ul>
         <li>Automated data cleaning</li>
         <li>EXAFS/XANES fitting</li>
@@ -167,7 +169,7 @@ calendar: true
 
       <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
 
-      <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
+      <div class="build-card-desc"><u>Python-based workflows for processing electrochemical and XAS data.</u></div>
       <ul>
         <li>111</li>
         <li>222</li>
@@ -191,7 +193,7 @@ calendar: true
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
       <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
+      <div class="build-card-desc"><u>Python-based workflows for processing electrochemical and XAS data.</u></div>
       <ul>
         <li>111</li>
         <li>222</li>
