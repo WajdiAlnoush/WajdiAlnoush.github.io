@@ -62,6 +62,7 @@ calendar: true
   <div class="build-row">
 
     <div class="build-card">
+      <div class="build-card-title">Novel Functional Materials</div>
       <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <circle cx="24" cy="8" r="3"/>
         <circle cx="10" cy="20" r="3"/>
@@ -75,16 +76,17 @@ calendar: true
         <line x1="10" y1="20" x2="38" y2="20"/>
         <line x1="10" y1="36" x2="38" y2="36"/>
       </svg>
-      <div class="build-card-title">Catalysts</div>
-      <div class="build-card-desc">ZIF-derived PGM-free electrocatalysts for oxygen reduction.</div>
+      <div class="build-card-desc">Designing and developing novel catalyic materials for sustainable energy conversion.</div>
       <ul>
+        <li>PGM-free catalysts</li>
         <li>Zeolitic imidazolate framework precursors</li>
         <li>Pyrolysis and structural tuning</li>
-        <li>Single-atom / Co-N-C active sites</li>
+        <li>Atomically dispersed M-N-C catalysts</li>
       </ul>
     </div>
 
     <div class="build-card">
+      <div class="build-card-title">Advanced Characterizatoin Tools</div>
       <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="14" y="10" width="20" height="28" rx="2"/>
         <line x1="14" y1="18" x2="34" y2="18"/>
@@ -92,8 +94,7 @@ calendar: true
         <line x1="28" y1="6" x2="28" y2="10"/>
         <path d="M18 24 Q24 20 30 24 Q24 28 18 24 Z"/>
       </svg>
-      <div class="build-card-title">Reactors</div>
-      <div class="build-card-desc">In-situ/operando reactors for X-ray absorption spectroscopy.</div>
+      <div class="build-card-desc">Building experimental platforms to observe materials under working conditions.</div>
       <ul>
         <li>Custom electrochemical cell design</li>
         <li>Beamline-compatible geometries</li>
@@ -102,13 +103,13 @@ calendar: true
     </div>
 
     <div class="build-card">
+      <div class="build-card-title">Experiments</div>
       <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <path d="M6 34 L14 20 L20 28 L28 12 L36 26 L42 18"/>
         <circle cx="14" cy="20" r="1.5" fill="#4fc3f7"/>
         <circle cx="28" cy="12" r="1.5" fill="#4fc3f7"/>
         <circle cx="36" cy="26" r="1.5" fill="#4fc3f7"/>
       </svg>
-      <div class="build-card-title">Experiments</div>
       <div class="build-card-desc">Electrochemical and spectroscopic platforms for understanding catalyst behavior.</div>
       <ul>
         <li>Rotating disk electrode (RDE) studies</li>
@@ -118,6 +119,7 @@ calendar: true
     </div>
 
     <div class="build-card">
+      <div class="build-card-title">Acceleration & Automation Pipelines</div>
       <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="6" y="8" width="10" height="8" rx="1"/>
         <rect x="20" y="8" width="10" height="8" rx="1"/>
@@ -129,11 +131,33 @@ calendar: true
         <line x1="11" y1="24" x2="19" y2="28"/>
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg>
-      <div class="build-card-title">Analysis pipelines</div>
       <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
       <ul>
         <li>Automated data cleaning</li>
         <li>EXAFS/XANES fitting</li>
+        <li>High-throughput experiments</li>  
+        <li>Reproducible batch processing</li>
+      </ul>
+    </div>
+
+    <div class="build-card">
+      <div class="build-card-title">Acceleration & Automation Pipelines - groowing interest - Self-driving/autonomus labs - Al/ML drived closed loop material discovery</div>
+      <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
+        <rect x="6" y="8" width="10" height="8" rx="1"/>
+        <rect x="20" y="8" width="10" height="8" rx="1"/>
+        <rect x="34" y="8" width="8" height="8" rx="1"/>
+        <rect x="14" y="28" width="10" height="8" rx="1"/>
+        <line x1="16" y1="12" x2="20" y2="12"/>
+        <line x1="30" y1="12" x2="34" y2="12"/>
+        <line x1="11" y1="16" x2="11" y2="24" />
+        <line x1="11" y1="24" x2="19" y2="28"/>
+        <line x1="25" y1="16" x2="19" y2="28"/>
+      </svg>
+      <div class="build-card-desc">Python-based workflows for processing electrochemical and XAS data.</div>
+      <ul>
+        <li>Automated data cleaning</li>
+        <li>EXAFS/XANES fitting</li>
+        <li>High-throughput experiments</li>  
         <li>Reproducible batch processing</li>
       </ul>
     </div>
