@@ -13,12 +13,12 @@ calendar: true
   .build-row {display: flex; flex-wrap: wrap; gap: 1rem;}
   .build-card {border: 0.4px solid #6b7280; border-radius: 10px; padding: 1rem;
     flex: 1 1 calc(50% - 0.5rem); min-width: 280px; box-sizing: border-box;}
-  .build-card-icon {display: block; width: 275px; height: 240px; object-fit: contain; margin: 0.5px auto 2px;}
-  .build-card-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7); margin-bottom: 0.1rem;}
+  .build-card-icon {display: block; width: 275px; height: 240px; object-fit: contain; margin: -12px auto 2px;}
+  .build-card-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7); margin-bottom: 0rem;}
   .build-card-desc {color: #9ca3af; font-size: 1.05rem; margin-bottom: 0.75rem;}
   .build-card ul {margin: 0; padding-left: 1.1rem; font-size: 0.92rem;}
-  .build-card ul li {margin-bottom: 0.3rem;}
-  .build-card-desc-underlined {border-bottom: 1px solid #4fc3f7; padding-bottom: 8px;}
+  .build-card ul li {margin-bottom: 0.2rem;}
+  .build-card-desc-underlined {border-bottom: 1px solid #6b7280; padding-bottom: 8px;}
 </style>
 
 <div class="build-section">
@@ -62,7 +62,7 @@ calendar: true
       </svg> -->
 
       <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc build-card-desc-underlined">Building experimental platforms to observe materials under working conditions.</div>
+      <div class="build-card-desc build-card-desc-underlined">Building custom platforms to observe materials under working conditions.</div>
       <ul>
         <li>Custom electrochemical cell design</li>
         <li>Beamline-compatible geometries</li>
