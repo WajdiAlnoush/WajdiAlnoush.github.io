@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /whatibuild/
-title: Value propisition. 
+title: What I Build 
 description: What I design, build, and bring value to.
 nav: true
 nav_order: 4
@@ -11,11 +11,11 @@ calendar: true
   .build-section {margin-top: 2.5rem;}
   .build-heading {font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; border-bottom: 1px solid #6b7280; padding-bottom: 0.5rem;}
   .build-row {display: flex; flex-wrap: wrap; gap: 1rem;}
-  .build-card {border: 0.4px solid #6b7280; border-radius: 10px; padding: 1rem;
+  .build-card {border: 0.3px solid #6b7280; border-radius: 10px; padding: 1rem;
     flex: 1 1 calc(50% - 0.5rem); min-width: 280px; box-sizing: border-box;}
-  .build-card-icon {display: block; width: 275px; height: 240px; object-fit: contain; margin: -18px auto -2px;}
-  .build-card-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7); margin-bottom: -2rem;}
-  .build-card-desc {color: #9ca3af; font-size: 1.05rem; margin-bottom: 0.65rem;}
+  .build-card-icon {display: block; width: 275px; height: 240px; object-fit: contain; margin: -18px auto -1px;}
+  .build-card-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7); margin-bottom: -0.5rem;}
+  .build-card-desc {color: #9ca3af; font-size: 1.05rem; margin-bottom: 0.35rem; margin-top: -2rem;}
   .build-card ul {margin: 0; padding-left: 1.1rem; font-size: 0.92rem;}
   .build-card ul li {margin-bottom: 0.1rem;}
   .build-card-desc-underlined {border-bottom: 1px solid #6b7280; padding-bottom: 8px;}

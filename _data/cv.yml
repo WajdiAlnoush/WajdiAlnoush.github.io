@@ -24,7 +24,7 @@ cv:
   sections:
     Education:
       - institution: McMaster University
-        location: ON, Canada
+        # location: ON, Canada
         url: https://www.uzh.ch/
         area: Chemical Engineering
         studyType: PhD
@@ -37,7 +37,7 @@ cv:
         #   - Description 2.
 
       - institution: Texas A&M University
-        location: Zurich, Switzerland
+        # location: Zurich, Switzerland
         area: Chemical Engineering
         studyType: Master of Science (MSc)
         start_date: 2016
@@ -47,7 +47,7 @@ cv:
         #   - Description 2.
 
       - institution: Texas A&M University
-        location: Zurich, Switzerland
+        # location: Zurich, Switzerland
         area: Chemical Engineering
         studyType: Bachelor of Science (BSc)
         start_date: 2011
