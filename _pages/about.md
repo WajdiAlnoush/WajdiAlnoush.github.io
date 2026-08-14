@@ -35,7 +35,7 @@ latest_posts:
   img[src*="prof_pic"] {width: 162px !important; height: 162px !important; display: block !important; margin-top: 5px !important;}
   
   .cv-icon-link {display: inline-block; margin-right: 4.75px; vertical-align: middle;}
-  .cv-icon {display: inline-block; width: 26.9px; height: 24.3px;
+  .cv-icon {display: inline-block; width: 26.9px; height: 24.3px; vertical-align: middle;position: relative; top: -6.2px;
     background-color: var(--global-theme-color);
     -webkit-mask-image: url('{{ "/assets/img/cv-icon.png" | relative_url }}');
     mask-image: url('{{ "/assets/img/cv-icon.png" | relative_url }}');
@@ -81,7 +81,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   <a href="https://github.com/WajdiAlnoush" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fab fa-github"></i></a>
   <a href="https://www.linkedin.com/in/wajdi-alnoush/" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fab fa-linkedin"></i></a>
   <a href="/feed.xml" style="margin-right: 4.75px; font-size: 1.65rem;"><i class="fas fa-rss"></i></a>
-  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 5px; position: relative; top: 1.4px; font-size: 1.95rem;"><i class="ai ai-google-scholar"></i></a>
+  <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 5.1px; position: relative; top: 1.4px; font-size: 1.95rem;"><i class="ai ai-google-scholar"></i></a>
 
   <!-- <a href="{{ '/assets/pdf/Wajdi_Alnoush_CV.pdf' | relative_url }}" style="margin-right: 4.75px; display: inline-block; vertical-align: middle;" aria-label="Curriculum Vitae" title="Curriculum Vitae"> <img src="{{ '/assets/img/cv-icon.png' | relative_url }}" alt="CV" style="width: 26.9px; height: 24.3px; object-fit: contain; vertical-align: middle;position: relative; top: -6.2px;"></a> -->
 
