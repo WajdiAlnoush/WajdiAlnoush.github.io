@@ -79,7 +79,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
   <a href="/feed.xml" style="margin-right: 4.75px; font-size: 1.7rem;"><i class="fas fa-rss"></i></a>
   <a href="https://scholar.google.com/citations?user=your-id" style="margin-right: 5px; font-size: 1.7rem;"><i class="ai ai-google-scholar"></i></a>
 
-  <a href="{{ '/assets/pdf/Wajdi_Alnoush_CV.pdf' | relative_url }}" style="margin-right: 4.75px; display: inline-block; vertical-align: middle;" aria-label="Curriculum Vitae" title="Curriculum Vitae"> <img src="{{ '/assets/img/cv-icon.png' | relative_url }}" alt="CV" style="width: 26px; height: 23.9px; object-fit: contain; vertical-align: middle;position: relative; top: -5.2px;"></a>
+  <a href="{{ '/assets/pdf/Wajdi_Alnoush_CV.pdf' | relative_url }}" style="margin-right: 4.75px; display: inline-block; vertical-align: middle;" aria-label="Curriculum Vitae" title="Curriculum Vitae"> <img src="{{ '/assets/img/cv-icon.png' | relative_url }}" alt="CV" style="width: 26.5px; height: 23.8px; object-fit: contain; vertical-align: middle;position: relative; top: -5.7px;"></a>
 </div>
 
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent; clear: both;">
