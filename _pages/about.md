@@ -54,6 +54,13 @@ latest_posts:
 
   .btn.btn-sm.z-depth-0[href*="doi.org"]::before {
     font: var(--fa-font-solid); content: "\f35d"; font-size: 1rem; margin-top: 7px;}
+  
+  .btn.btn-sm.z-depth-0[href*="scholar.google.com"] {border: none !important; box-shadow: none !important; padding: 0 !important;
+  font-size: 0; /* hides the default "HTML" button text */
+  display: inline-block; width: 21px; height: 21px; vertical-align: middle;
+  background-color: var(--global-theme-color); -webkit-mask-image: url('https://cdn.simpleicons.org/googlescholar/white');
+  mask-image: url('https://cdn.simpleicons.org/googlescholar/white'); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain;}
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
