@@ -52,8 +52,7 @@ latest_posts:
     font-size: 0; /* hides the "DOI" text */
     padding: 0 !important;}
 
-  .btn.btn-sm.z-depth-0[href*="doi.org"]::before {
-    font: var(--fa-font-solid); content: "\f35d"; font-size: 1rem; margin-top: 7px;}
+  .btn.btn-sm.z-depth-0[href*="doi.org"]::before {font: var(--fa-font-solid); content: "\f35d"; font-size: 1rem; margin-top: 7px;}
   
   .btn.btn-sm.z-depth-0[href*="scholar.google.com"] {border: none !important; box-shadow: none !important; padding: 0 !important;
   font-size: 0; /* hides the default "HTML" button text */
