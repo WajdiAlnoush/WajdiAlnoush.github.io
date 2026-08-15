@@ -2,12 +2,12 @@
 layout: course
 title: Reservoir Petrophysics
 university: Texas A&M 
-description: This course (PETE 311) covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
-# instructor: Prof. Data
+description: This course (PETE 311) covers the physical properties of petroleum reservoir rocks, with systematic theoretical and laboratory investigations of lithology, porosity, elastic properties, strength, acoustic properties, electrical properties, relative and effective permeability, fluid saturations, capillary characteristics, and rock-fluid interactions. 
+instructor: Dr. Nayef Alyafei
 year: 2019
 term: Spring
 # location: Science Building, Room 202
-time: Mondays and Wednesdays, 2:00-3:30 PM
+# time: Mondays and Wednesdays, 2:00-3:30 PM
 course_id: data-science-fundamentals
 schedule:
   - week: 1

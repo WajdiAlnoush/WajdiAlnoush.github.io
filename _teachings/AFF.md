@@ -2,12 +2,12 @@
 layout: course
 title: CIRTL Associate
 university: Texas A&M 
-description: This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.
-instructor: Prof. Example
+description: CIRTL Associates have a strong foundation in evidence-based teaching and learning practices, are able to describe these practices, and recognize their value for improving undergraduate learning.
+instructor: Centre for the Integration of Research, Teaching, and Learning (CIRTL) 
 year: 2023
 term: Fall
 # location: Main Campus, Room 301
-time: Tuesdays and Thursdays, 10:00-11:30 AM
+# time: Tuesdays and Thursdays, 10:00-11:30 AM
 course_id: intro-machine-learning
 schedule:
   - week: 1
@@ -95,7 +95,7 @@ This introductory course on machine learning covers fundamental concepts and alg
 - Evaluate and compare model performance
 - Apply machine learning techniques to real-world problems
 
-## Prerequisites
+<!-- ## Prerequisites
 
 - Basic knowledge of linear algebra and calculus
 - Programming experience in Python
@@ -104,11 +104,11 @@ This introductory course on machine learning covers fundamental concepts and alg
 ## Textbooks
 
 - Primary: "Machine Learning: A Probabilistic Perspective" by Kevin Murphy
-- Reference: "Pattern Recognition and Machine Learning" by Christopher Bishop
+- Reference: "Pattern Recognition and Machine Learning" by Christopher Bishop -->
 
-## Grading
+<!-- ## Grading
 
 - Assignments: 40%
 - Midterm Exam: 20%
 - Final Project: 30%
-- Participation: 10%
+- Participation: 10% -->

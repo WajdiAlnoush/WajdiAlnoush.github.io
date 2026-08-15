@@ -2,63 +2,65 @@
 layout: course
 title: Chemical Engineering Thermodynamics
 university: McMaster University
-description: This course (CHEMENG 3D03) discusses the fundamental theories of thermodynamics and their application in chemical engineering processes, with particular focuses on non-ideal and multicomponent systems and on thermodynamic equilibrium analysis.
+description: This course (CHEMENG 3D03) discusses the fundamental theories of thermodynamics and their application in chemical engineering processes, with particular focuses on non-ideal and multicomponent systems and on thermodynamic equilibrium analysis. This course provides students with a fundamental background on the determination and evaluation of fluid properties. It also provides mathematical tools for the analysis and interpretation of data. Incorporates design of PVT-related processes
 instructor: Dr. Vincent Leung
 year: 2022
 term: Fall
 # location: Main Campus, Room 301
-time: Tuesdays and Thursdays, 10:00-11:30 AM
+# time: Tuesdays and Thursdays, 10:00-11:30 AM
 course_id: intro-machine-learning
 schedule:
   - week: 1
-    date: Sept 5
+    # date: Sept 5
     topic: Basic concepts and laws of thermodynamics
-    description: Overview of machine learning, course structure, and expectations.
-    materials:
-      - name: Syllabus
-        url: /assets/pdf/example_pdf.pdf
-      - name: Slides
-        url: /assets/pdf/example_pdf.pdf
+    description: 
+    # materials:
+    #   - name: Syllabus
+    #     url: /assets/pdf/example_pdf.pdf
+    #   - name: Slides
+    #     url: /assets/pdf/example_pdf.pdf
 
   - week: 2
     date: Sept 12
     topic: Thermodynamic Properties and Relations
-    description: Introduction to linear regression, gradient descent, and model evaluation.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 1
-        url: /assets/pdf/example_pdf.pdf
+    description: "- PVT behaviors and equation of state
+                  – Free energy and property relations
+                  – Residual properties"
+    # materials:
+    #   - name: Lecture Notes
+    #     url: /assets/pdf/example_pdf.pdf
+    #   - name: Assignment 1
+    #     url: /assets/pdf/example_pdf.pdf
 
   - week: 3
     date: Sept 19
     topic: Vapor-Liquid Equilibrium (VLE)
     description: Logistic regression, decision boundaries, and multi-class classification.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
+    # materials:
+    #   - name: Lecture Notes
+    #     url: /assets/pdf/example_pdf.pdf
+    #   - name: Coding Lab
+    #     url: https://github.com/
 
   - week: 4
     date: Sept 26
     topic: Solution Theory – Thermodynamic Properties of Mixtures
     description: Tree-based methods, ensemble learning, and feature importance.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 2
-        url: /assets/pdf/example_pdf.pdf
+    # materials:
+    #   - name: Lecture Notes
+    #     url: /assets/pdf/example_pdf.pdf
+    #   - name: Assignment 2
+    #     url: /assets/pdf/example_pdf.pdf
 
   - week: 5
     date: Oct 3
     topic: Thermodynamics of Mixtures and Mixing
     description: Margin maximization, kernel methods, and support vectors.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Review Materials
-        url: /assets/pdf/example_pdf.pdf
+    # materials:
+    #   - name: Lecture Notes
+    #     url: /assets/pdf/example_pdf.pdf
+    #   - name: Review Materials
+    #     url: /assets/pdf/example_pdf.pdf
 
   - week: 6
     date: Oct 10
@@ -87,11 +89,11 @@ This introductory course on machine learning covers fundamental concepts and alg
 - Evaluate and compare model performance
 - Apply machine learning techniques to real-world problems
 
-## Prerequisites
+<!-- ## Prerequisites
 
 - Basic knowledge of linear algebra and calculus
 - Programming experience in Python
-- Probability and statistics fundamentals
+- Probability and statistics fundamentals -->
 
 ## Textbooks
 

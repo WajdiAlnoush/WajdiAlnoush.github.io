@@ -22,13 +22,10 @@ calendar: true
   .teaching-course-meta {color: #9ca3af; font-size: 0.95rem;}
 </style>
 
-
 {% assign courses_by_university = site.teachings | group_by: "university" %}
-
 {% for group in courses_by_university %}
   <div class="teaching-group">
     <div class="teaching-university">{{ group.name }}</div>
-
     {% assign sorted_courses = group.items | sort: "year" | reverse %}
     <div class="teaching-course-row">
       {% for course in sorted_courses %}
@@ -44,5 +41,4 @@ calendar: true
     </div>
   </div>
 {% endfor %}
-
 <!-- {% include courses.liquid %} -->
