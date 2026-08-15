@@ -1,10 +1,14 @@
 import re
 import requests
+from urllib.parse import quote  # add this import at the top
 
 ORCID = "0000-0002-6089-032X"
 HEADERS = {"Accept": "application/json"}
 BIB_PATH = "_bibliography/papers_wajdi.bib"
 NUM_SELECTED = 4  # how many recent papers to flag selected={true}
+
+def make_scholar_url(title):
+    return f"https://scholar.google.com/scholar?q={quote(title)}"
 
 # Manual corrections for known-wrong author names coming from ORCID/Crossref
 # (e.g. misparsed given/family names, publisher typos). Add more pairs as you spot them.
@@ -126,6 +130,8 @@ for i, paper in enumerate(papers):
         fields.append(f'  year = {{{paper["year"]}}}')
     if paper["doi"]:
         fields.append(f'  doi = {{{paper["doi"]}}}')
+    if paper["title"]:
+        fields.append(f'  html = {{{make_scholar_url(paper["title"])}}}')   # <-- new
     fields.append(f"  selected = {{{selected}}}")
 
     entry = "@article{" + key + ",\n" + ",\n".join(fields) + "\n}\n"
