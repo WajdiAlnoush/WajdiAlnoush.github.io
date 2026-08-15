@@ -56,8 +56,8 @@ latest_posts:
   
   .btn.btn-sm.z-depth-0[href*="scholar.google.com"] {border: none !important; box-shadow: none !important; padding: 0 !important;
   font-size: 0; /* hides the default "HTML" button text */
-  display: inline-block; width: 21px; height: 21px; vertical-align: middle;
-  background-color: var(--global-theme-color); -webkit-mask-image: url('https://cdn.simpleicons.org/googlescholar/white');
+  display: inline-block; width: 17.8px; height: 17.8px; vertical-align: middle;
+  background-color: currentColor; -webkit-mask-image: url('https://cdn.simpleicons.org/googlescholar/white');
   mask-image: url('https://cdn.simpleicons.org/googlescholar/white'); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
   -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain;}
 </style>
