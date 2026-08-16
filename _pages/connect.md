@@ -53,16 +53,19 @@ calendar: true
 <style>
   .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.4px solid #6b7280;}
   .connect-row:last-child {border-bottom: none;}
-  .connect-label {font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0;}
-  .connect-control {flex: 1 1 auto; max-width: 420px; display: flex; justify-content: flex-end;}
+  .connect-label {font-size: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0;}
+  .connect-control {flex: 1 1 auto; max-width: 440px; display: flex; justify-content: flex-end;}
+  /* #booking-button button {font-size: 0.95rem !important; font-weight: 600; display: inline-flex !important; align-items: center !important; justify-content: center !important;} */
 
   /* Anonymous message: textarea + button combined into one control */
-  .anon-wrapper {display: flex; align-items: flex-end; gap: 0.5rem; width: 100%;}
-  .anon-wrapper textarea {flex: 1 1 auto; padding: 0.5rem 0.75rem; border-radius: 8px; border: 0.4px solid #6b7280;
-    background: transparent; color: inherit; font-family: inherit; font-size: 0.9rem; resize: none; overflow: hidden; min-height: 38px; line-height: 1.3;}
-  .anon-wrapper button {flex-shrink: 0; font-size: 0.95rem; white-space: nowrap; background-color: var(--global-theme-color, #4fc3f7); border:none; border-radius: 8px; padding: 6px 14px; cursor:pointer;}
-  .qxCTlb {border-radius: 8px !important; color: #ffffff !important;}
-  .bmc-btn {transform: scale(0.68) !important; transform-origin: right center !important;}
+  .anon-wrapper {display: flex; align-items: center; gap: 0.8rem; width: 100%;}
+  .anon-wrapper textarea {flex: 1 1 auto; padding: 0.5rem 0.65rem; border-radius: 8px; border: 0.4px solid #6b7280;
+    background: transparent; color: inherit; font-family: inherit; font-size: 0.9rem; font-weight: 450; resize: none; overflow: hidden; min-height: 40px; line-height: 1.1; align-content: center;}
+  .anon-wrapper button {flex-shrink: 0; font-size: 1rem; font-weight: 600; margin-left: auto; white-space: nowrap; background-color: var(--global-theme-color, #4fc3f7); color: #ffffff; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border:none; border-radius: 8px; padding: 6px 12px; cursor:pointer; width: 175px; height: 40px;}
+  /* The book a meeting button */
+  .qxCTlb {width: 175px !important; height: 40px !important; font-size: 0.95rem !important; font-weight: 450; border-radius: 8px !important; color: #ffffff !important; margin-right: 6px;}
+  /* The buy me a coffee button */
+  .bmc-btn {transform: scale(0.767) !important; transform-origin: right center !important; margin-right: 7px;}
 </style>
 
 <div class="connect-row">
@@ -72,13 +75,9 @@ calendar: true
     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script>
-      window.addEventListener('load', function () {
-        calendar.schedulingButton.load({
-          url: 'https://calendar.app.google/NcTKFsykfF5UKwQe9?gv=true',
-          color: '#7fb8a3',
-          label: 'Book a meeting',
-          target: document.getElementById('booking-button')
-        });
+      window.addEventListener('load', function () {calendar.schedulingButton.load({
+          url: 'https://calendar.app.google/NcTKFsykfF5UKwQe9?gv=true', color: '#7fb8a3', label: 'Book a meeting',
+          target: document.getElementById('booking-button')});
       });
     </script>
     <div id="booking-button"></div>
@@ -86,7 +85,7 @@ calendar: true
 </div>
 
 <div class="connect-row">
-  <div class="connect-label"><i class="fa-regular fa-comment-dots"></i> Send an anonymous message</div>
+  <div class="connect-label"><i class="fa-regular fa-comment-dots"></i> Send me an anonymous message</div>
   <div class="connect-control">
     <form action="https://formspree.io/f/xqpzdkkp" method="POST" class="anon-wrapper">
       <textarea name="message" id="anon-textarea" placeholder="Type your message here..." rows="1" required></textarea>

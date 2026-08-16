@@ -23,12 +23,17 @@ nav_order: 2
   /* .btn.btn-sm.z-depth-0[href*="doi.org"]::before {
     content: "🔗";} */
 
-  .btn.btn-sm.z-depth-0[href*="doi.org"] {
-    border: none !important; background: transparent !important; box-shadow: none !important;
+  .btn.btn-sm.z-depth-0[href*="doi.org"] {border: none !important; background: transparent !important; box-shadow: none !important;
     font-size: 0; /* hides the "DOI" text */
     padding: 0 !important;}
 
-  .btn.btn-sm.z-depth-0[href*="doi.org"]::before {font: var(--fa-font-solid); content: "\f35d"; font-size: 1rem; margin-top: 7px;}
+  .btn.btn-sm.z-depth-0[href*="doi.org"]::before {font: var(--fa-font-solid); content: "\f35d"; font-size: 0.85rem; margin-top: 7px;}
+  .btn.btn-sm.z-depth-0[href*="scholar.google.com"] {border: none !important; box-shadow: none !important; padding: 0 !important;
+  font-size: 0; /* hides the default "HTML" button text */
+  display: inline-block; width: 14.5px; height: 14.5px; vertical-align: middle;
+  background-color: currentColor; -webkit-mask-image: url('https://cdn.simpleicons.org/googlescholar/white');
+  mask-image: url('https://cdn.simpleicons.org/googlescholar/white'); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain;}
 </style>
 
 <div class="publications">
