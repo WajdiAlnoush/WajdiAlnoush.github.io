@@ -41,7 +41,7 @@ calendar: true
         <line x1="10" y1="36" x2="38" y2="36"/>
       </svg> -->
 
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_1.png' | relative_url }}" alt="Advanced characterization tools">
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_1.png' | relative_url }}" alt="Novel Functional Materials">
       <div class="build-card-desc build-card-desc-underlined">Designing and developing novel catalyic materials for sustainable energy conversion.</div>
       <ul>
         <li>PGM-free catalysts</li>
@@ -52,7 +52,7 @@ calendar: true
     </div>
 
     <div class="build-card">
-      <div class="build-card-title">Advanced Characterizatoin Tools</div>
+      <div class="build-card-title">Advanced Characterization Tools</div>
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="14" y="10" width="20" height="28" rx="2"/>
         <line x1="14" y1="18" x2="34" y2="18"/>
@@ -65,9 +65,9 @@ calendar: true
       <div class="build-card-desc build-card-desc-underlined">Building custom platforms to observe materials under working conditions.</div>
       <ul>
         <li>Custom electrochemical cell design</li>
-        <li>Beamline-compatible geometries</li>
-        <li>Real-time structural monitoring</li>
-        <li>XX</li>
+        <li>Beamline-compatible geometries EXAFS/XANES fitting</li>
+        <li>Real-time structural monitoring Operando XAS measurements</li>
+        <li><em>In situ</em>/<em>Operando</em> capabilities</li>
       </ul>
     </div>
 
@@ -80,13 +80,13 @@ calendar: true
         <circle cx="36" cy="26" r="1.5" fill="#4fc3f7"/>
       </svg> -->
 
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc build-card-desc-underlined">Electrochemical and spectroscopic platforms for understanding catalyst behavior.</div>
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Experiments">
+      <div class="build-card-desc build-card-desc-underlined">Evaluating the electrochemical properties and performance of catalytic materials.</div>
       <ul>
-        <li>Rotating disk electrode (RDE) studies</li>
+        <li>Catalyst screening</li>
         <li>Impedance spectroscopy</li>
-        <li>Operando XAS measurements</li>
-        <li>XX</li>
+        <li>Structure-property-performance relationships</li>
+        <li>Durability and performance evaluation</li>
       </ul>
     </div>
 
@@ -104,12 +104,12 @@ calendar: true
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
       
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_5.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc build-card-desc-underlined">Python-based workflows for processing electrochemical and XAS data.</div>
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_5.png' | relative_url }}" alt="Acceleration & Automation Pipelines">
+      <div class="build-card-desc build-card-desc-underlined">Reproducible workflows that accelerate experimental data processing and analysis.</div>
       <ul>
-        <li>Automated data cleaning</li>
-        <li>EXAFS/XANES fitting</li>
-        <li>High-throughput experiments</li>  
+        <li>Automated data cleaning and processing</li>
+        <li>Automated data analysis and visualization</li>
+        <li>High-throughput workflows</li>  
         <li>Reproducible batch processing</li>
       </ul>
     </div>
@@ -124,7 +124,6 @@ calendar: true
 
     <div class="build-card">
       <div class="build-card-title">Al/ML-driven Material Discovery</div>
-
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="6" y="8" width="10" height="8" rx="1"/>
         <rect x="20" y="8" width="10" height="8" rx="1"/>
@@ -136,20 +135,18 @@ calendar: true
         <line x1="11" y1="24" x2="19" y2="28"/>
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
-
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_6.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc build-card-desc-underlined">Python-based workflows for processing electrochemical and XAS data.</div>
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_6.png' | relative_url }}" alt="Al/ML-driven Material Discovery">
+      <div class="build-card-desc build-card-desc-underlined">Exploring data-driven approaches to accelerate catalyst discovery and materials optimization.</div>
       <ul>
-        <li>111</li>
-        <li>222</li>
-        <li>333</li>  
-        <li>444</li>
+        <li>Structure-property prediction</li>
+        <li>Catalyst performance modeling</li>
+        <li>Data-driven materials screening</li>  
+        <li>Synthesizability assessment</li>
       </ul>
     </div>
 
     <div class="build-card">
       <div class="build-card-title">Autonomous & Self-driving Labs</div>
-
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="6" y="8" width="10" height="8" rx="1"/>
         <rect x="20" y="8" width="10" height="8" rx="1"/>
@@ -161,13 +158,13 @@ calendar: true
         <line x1="11" y1="24" x2="19" y2="28"/>
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_4.png' | relative_url }}" alt="Advanced characterization tools">
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_4.png' | relative_url }}" alt="Autonomous & Self-driving Labs">
       <div class="build-card-desc build-card-desc-underlined">Python-based workflows for processing electrochemical and XAS data.</div>
       <ul>
-        <li>111</li>
-        <li>222</li>
-        <li>333</li>  
-        <li>444</li>
+        <li>Automated experimentation and synthesis</li>
+        <li>Rapid experiment–learn–iterate cycles</li>
+        <li>Lower resource consumption per discovery cycle</li>  
+        <li>Closed-loop materials optimization</li>
       </ul>
     </div>
 
