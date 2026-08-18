@@ -47,3 +47,22 @@ calendar: true
   </div>
 {% endfor %}
 <!-- {% include courses.liquid %} -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.teaching-course').forEach(function (card) {
+      const desc = card.querySelector('.teaching-course-desc');
+      const btn = card.querySelector('.teaching-readmore');
+      if (!desc || !btn) return;
+
+      // If the text is actually being clipped (real content taller than 3 lines), show the button
+      if (desc.scrollHeight > desc.clientHeight + 2) {
+        btn.style.display = 'inline-block';
+        btn.addEventListener('click', function () {
+          const expanded = desc.classList.toggle('expanded');
+          btn.textContent = expanded ? 'Read less' : 'Read more';
+        });
+      }
+    });
+  });
+</script>
