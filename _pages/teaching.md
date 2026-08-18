@@ -34,14 +34,15 @@ calendar: true
     {% assign sorted_courses = group.items | sort: "year" | reverse %}
     <div class="teaching-course-row">
       {% for course in sorted_courses %}
-        <div class="teaching-course">
-          <a href="{{ course.url | relative_url }}" class="teaching-course-title">{{ course.title }}</a>
-          <div class="teaching-course-meta">
-            {{ course.term }} {{ course.year }}
-            {% if course.instructor %} · {{ course.instructor }}{% endif %}
-          </div>
-          <p>{{ course.description }}</p>
-        </div>
+  <div class="teaching-course">
+    <a href="{{ course.url | relative_url }}" class="teaching-course-title">{{ course.title }}</a>
+    <div class="teaching-course-meta">
+      {{ course.term }} {{ course.year }}
+      {% if course.instructor %} · {{ course.instructor }}{% endif %}
+    </div>
+    <p class="teaching-course-desc">{{ course.description }}</p>
+    <button class="teaching-readmore" style="display: none;">Read more</button>
+  </div>
       {% endfor %}
     </div>
   </div>
