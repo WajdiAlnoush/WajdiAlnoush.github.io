@@ -21,10 +21,28 @@ calendar: true
   .teaching-course-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7);}
   .teaching-course-meta {color: #9ca3af; font-size: 0.95rem;}
 
-  .teaching-course-desc {margin: 0.5rem 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
+  .teaching-course-desc-wrapper {position: relative; margin-top: 0.5rem;}
+  .teaching-course-desc {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 0;}
   .teaching-course-desc.expanded {display: block; -webkit-line-clamp: unset; overflow: visible;}
-  .teaching-readmore {display: inline-block; margin-top: 0.4rem; font-size: 0.85rem; color: var(--global-theme-color, #4fc3f7); cursor: pointer;
-    background: none; border: none; padding: 0; font-weight: 600;}
+
+  .teaching-readmore {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 0.4rem;
+    background: var(--global-bg-color, #1b1b1e);
+    color: #9ca3af;
+    text-decoration: underline dotted;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .teaching-readmore.static {
+    position: static;
+    display: inline-block;
+    margin-top: 0.3rem;
+    background: none;
+    padding-left: 0;
+  }
 </style>
 
 {% assign courses_by_university = site.teachings | group_by: "university" %}
@@ -34,15 +52,17 @@ calendar: true
     {% assign sorted_courses = group.items | sort: "year" | reverse %}
     <div class="teaching-course-row">
       {% for course in sorted_courses %}
-  <div class="teaching-course">
-    <a href="{{ course.url | relative_url }}" class="teaching-course-title">{{ course.title }}</a>
-    <div class="teaching-course-meta">
-      {{ course.term }} {{ course.year }}
-      {% if course.instructor %} · {{ course.instructor }}{% endif %}
-    </div>
-    <p class="teaching-course-desc">{{ course.description }}</p>
-    <button class="teaching-readmore" style="display: none;">Read more</button>
-  </div>
+        <div class="teaching-course">
+          <a href="{{ course.url | relative_url }}" class="teaching-course-title">{{ course.title }}</a>
+          <div class="teaching-course-meta">
+            {{ course.term }} {{ course.year }}
+            {% if course.instructor %} · {{ course.instructor }}{% endif %}
+          </div>
+          <div class="teaching-course-desc-wrapper">
+            <p class="teaching-course-desc">{{ course.description }}</p>
+            <span class="teaching-readmore" style="display: none;">Read more</span>
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -56,12 +76,17 @@ calendar: true
       const btn = card.querySelector('.teaching-readmore');
       if (!desc || !btn) return;
 
-      // If the text is actually being clipped (real content taller than 3 lines), show the button
       if (desc.scrollHeight > desc.clientHeight + 2) {
         btn.style.display = 'inline-block';
         btn.addEventListener('click', function () {
           const expanded = desc.classList.toggle('expanded');
-          btn.textContent = expanded ? 'Read less' : 'Read more';
+          if (expanded) {
+            btn.textContent = 'Read less';
+            btn.classList.add('static'); // once expanded, drop the overlay positioning
+          } else {
+            btn.textContent = 'Read more';
+            btn.classList.remove('static');
+          }
         });
       }
     });
