@@ -20,6 +20,11 @@ calendar: true
     min-width: 280px; box-sizing: border-box;}
   .teaching-course-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7);}
   .teaching-course-meta {color: #9ca3af; font-size: 0.95rem;}
+
+  .teaching-course-desc {margin: 0.5rem 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
+  .teaching-course-desc.expanded {display: block; -webkit-line-clamp: unset; overflow: visible;}
+  .teaching-readmore {display: inline-block; margin-top: 0.4rem; font-size: 0.85rem; color: var(--global-theme-color, #4fc3f7); cursor: pointer;
+    background: none; border: none; padding: 0; font-weight: 600;}
 </style>
 
 {% assign courses_by_university = site.teachings | group_by: "university" %}
