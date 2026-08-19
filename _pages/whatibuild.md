@@ -42,12 +42,12 @@ calendar: true
       </svg> -->
 
       <img class="build-card-icon" src="{{ '/assets/img/WIB_1.png' | relative_url }}" alt="Novel Functional Materials">
-      <div class="build-card-desc build-card-desc-underlined">Designing and developing novel catalyic materials for sustainable energy conversion.</div>
+      <div class="build-card-desc build-card-desc-underlined">Designing and developing novel functional and catalyic materials for sustainable energy conversion.</div>
       <ul>
         <li>PGM-free catalysts</li>
-        <li>Zeolitic imidazolate framework precursors</li>
-        <li>Pyrolysis and structural tuning</li>
-        <li>Atomically dispersed M-N-C catalysts</li>
+        <li>Metal organic framework (MOF)-derived materials</li>
+        <li>Porous & Heterpatom-doped carbonaceous architectures</li>
+        <li>Atomically dispersed metal-nitrogen-carbon (M-N-C) catalysts</li>
       </ul>
     </div>
 
@@ -64,15 +64,15 @@ calendar: true
       <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
       <div class="build-card-desc build-card-desc-underlined">Building custom platforms to observe materials under working conditions.</div>
       <ul>
-        <li>Custom electrochemical cell design</li>
-        <li>Beamline-compatible geometries EXAFS/XANES fitting</li>
-        <li>Real-time structural monitoring Operando XAS measurements</li>
-        <li><em>In situ</em>/<em>Operando</em> capabilities</li>
+        <li>Custom reactor and electrochemical cell designs</li>
+        <li>Synchrotron-based experimental set-ups</li>
+        <li>Multimodal structural characterization</li>
+        <li><em>In situ</em>/<em>operando</em> structural monitoring</li>
       </ul>
     </div>
 
     <div class="build-card">
-      <div class="build-card-title">Experiments</div>
+      <div class="build-card-title">Electrochemical Screening & Analysis</div>
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <path d="M6 34 L14 20 L20 28 L28 12 L36 26 L42 18"/>
         <circle cx="14" cy="20" r="1.5" fill="#4fc3f7"/>
@@ -80,13 +80,13 @@ calendar: true
         <circle cx="36" cy="26" r="1.5" fill="#4fc3f7"/>
       </svg> -->
 
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Experiments">
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Electrochemical Screening & Analysis">
       <div class="build-card-desc build-card-desc-underlined">Evaluating the electrochemical properties and performance of catalytic materials.</div>
       <ul>
-        <li>Catalyst screening</li>
-        <li>Impedance spectroscopy</li>
-        <li>Structure-property-performance relationships</li>
-        <li>Durability and performance evaluation</li>
+        <li>Catalyst screening and performance benchmarking</li>
+        <li>2/3-electrode electrochemical techniques (RDE/RRDE, CV, LSV, EIS, Chrono)</li>
+        <li>Stability and durability assessment</li>
+        <li>Structure-activity-performance correlations</li>
       </ul>
     </div>
 
