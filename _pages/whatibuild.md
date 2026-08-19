@@ -84,7 +84,7 @@ calendar: true
       <div class="build-card-desc build-card-desc-underlined">Evaluating the electrochemical properties and performance of catalytic materials.</div>
       <ul>
         <li>Catalyst screening and performance benchmarking</li>
-        <li>2/3-electrode electrochemical techniques (RDE/RRDE, CV, LSV, EIS, Chrono)</li>
+        <li>2/3-electrode electrochemical techniques (RDE/RRDE, CV, LSV, EIS)</li>
         <li>Stability and durability assessment</li>
         <li>Structure-activity-performance correlations</li>
       </ul>
