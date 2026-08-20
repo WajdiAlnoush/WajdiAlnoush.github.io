@@ -3,8 +3,8 @@ layout: course
 title: Numerical Methods and Computing for Chemical Engineers 
 university: McMaster University
 description: This course (CHEMENG 2E04) focuses on the formulation and solution of various engineering problems. A variety of techniques for numerical solution of linear and nonlinear model equations are reviewed, including algebraic and ordinary differential equations, and the use of curve-fitting and interpolation methods.
-instructor: Dr. Jake Nease and Dr. Stuart Linely
-year: 2020/2021/2024
+instructor: Dr. Jake Nease | Dr. Stuart Linely
+year: 2020-2024
 term: Fall
 # location: Main Campus, Room 301
 # time: Tuesdays and Thursdays, 10:00-11:30 AM

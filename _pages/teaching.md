@@ -49,7 +49,47 @@ calendar: true
 {% for group in courses_by_university %}
   <div class="teaching-group">
     <div class="teaching-university">{{ group.name }}</div>
-    {% assign sorted_courses = group.items | sort: "year" | reverse %}
+    {% assign certificates = group.items | where: "teaching_type", "certificate" %}
+{% assign courses = group.items | where_exp: "item", "item.teaching_type != 'certificate'" %}
+
+{% assign sorted_courses = courses | sort: "year" | reverse %}
+{% assign sorted_certificates = certificates | sort: "year" | reverse %}
+
+<div class="teaching-course-row">
+
+  {% for course in sorted_courses %}
+    <div class="teaching-course">
+      <a href="{{ course.url | relative_url }}" class="teaching-course-title">{{ course.title }}</a>
+
+      <div class="teaching-course-meta">
+        {{ course.term }} {{ course.year }}
+        {% if course.instructor %} · {{ course.instructor }}{% endif %}
+      </div>
+
+      <div class="teaching-course-desc-wrapper">
+        <p class="teaching-course-desc">{{ course.description }}</p>
+        <span class="teaching-readmore" style="display: none;">Read more</span>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% for certificate in sorted_certificates %}
+    <div class="teaching-course">
+      <a href="{{ certificate.url | relative_url }}" class="teaching-course-title">{{ certificate.title }}</a>
+
+      <div class="teaching-course-meta">
+        {{ certificate.term }} {{ certificate.year }}
+        {% if certificate.instructor %} · {{ certificate.instructor }}{% endif %}
+      </div>
+
+      <div class="teaching-course-desc-wrapper">
+        <p class="teaching-course-desc">{{ certificate.description }}</p>
+        <span class="teaching-readmore" style="display: none;">Read more</span>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+    <!-- {% assign sorted_courses = group.items | sort: "year" | reverse %}
     <div class="teaching-course-row">
       {% for course in sorted_courses %}
         <div class="teaching-course">
@@ -64,7 +104,7 @@ calendar: true
           </div>
         </div>
       {% endfor %}
-    </div>
+    </div> -->
   </div>
 {% endfor %}
 <!-- {% include courses.liquid %} -->

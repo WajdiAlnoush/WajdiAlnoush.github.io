@@ -4,6 +4,7 @@ title: Teaching and Learning Scholar
 university: McMaster University
 description: The Teaching and Learning Scholar designation is earned through programs offered by the Paul R. MacPherson Institute for Leadership, Innovation and Excellence in Teaching at McMaster University. The certificate is offered to  graduate students, postdoctoral fellows, and sessional faculty who complete structured professional development certificates focused on evidence-based pedagogies and educational research.
 instructor: Paul R. MacPherson Institute
+teaching_type: certificate
 year: 2024
 # term: Spring
 # location: Science Building, Room 202

@@ -42,12 +42,12 @@ calendar: true
       </svg> -->
 
       <img class="build-card-icon" src="{{ '/assets/img/WIB_1.png' | relative_url }}" alt="Novel Functional Materials">
-      <div class="build-card-desc build-card-desc-underlined">Designing and developing novel functional and catalyic materials for sustainable energy conversion.</div>
+      <div class="build-card-desc build-card-desc-underlined">Novel functional and catalyic materials for sustainable energy conversion.</div>
       <ul>
         <li>PGM-free catalysts</li>
         <li>Metal organic framework (MOF)-derived materials</li>
-        <li>Porous & Heterpatom-doped carbonaceous architectures</li>
-        <li>Atomically dispersed metal-nitrogen-carbon (M-N-C) catalysts</li>
+        <li>Porous & Heteroatom-doped carbon materials</li>
+        <li>Atomically dispersed M-N-C catalysts</li>
       </ul>
     </div>
 
@@ -62,17 +62,17 @@ calendar: true
       </svg> -->
 
       <img class="build-card-icon" src="{{ '/assets/img/WIB_2.png' | relative_url }}" alt="Advanced characterization tools">
-      <div class="build-card-desc build-card-desc-underlined">Building custom platforms to observe materials under working conditions.</div>
+      <div class="build-card-desc build-card-desc-underlined"> Custom platforms to observe materials under working conditions.</div>
       <ul>
         <li>Custom reactor and electrochemical cell designs</li>
         <li>Synchrotron-based experimental set-ups</li>
-        <li>Multimodal structural characterization</li>
         <li><em>In situ</em>/<em>operando</em> structural monitoring</li>
+        <li>Multimodal structural characterization</li>
       </ul>
     </div>
 
     <div class="build-card">
-      <div class="build-card-title">Electrochemical Screening & Analysis</div>
+      <div class="build-card-title">Electrochemical Testing Protocols</div>
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <path d="M6 34 L14 20 L20 28 L28 12 L36 26 L42 18"/>
         <circle cx="14" cy="20" r="1.5" fill="#4fc3f7"/>
@@ -80,11 +80,11 @@ calendar: true
         <circle cx="36" cy="26" r="1.5" fill="#4fc3f7"/>
       </svg> -->
 
-      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Electrochemical Screening & Analysis">
-      <div class="build-card-desc build-card-desc-underlined">Evaluating the electrochemical properties and performance of catalytic materials.</div>
+      <img class="build-card-icon" src="{{ '/assets/img/WIB_3.png' | relative_url }}" alt="Electrochemical Testing Protocols">
+      <div class="build-card-desc build-card-desc-underlined">Protocols to evaluate the electrochemical properties and performance of catalytic materials.</div>
       <ul>
+        <li>2/3-electrode techniques (RDE/RRDE, CV, LSV, EIS,..etc)</li>
         <li>Catalyst screening and performance benchmarking</li>
-        <li>2/3-electrode electrochemical techniques (RDE/RRDE, CV, LSV, EIS)</li>
         <li>Stability and durability assessment</li>
         <li>Structure-activity-performance correlations</li>
       </ul>
@@ -136,7 +136,7 @@ calendar: true
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
       <img class="build-card-icon" src="{{ '/assets/img/WIB_6.png' | relative_url }}" alt="Al/ML-driven Material Discovery">
-      <div class="build-card-desc build-card-desc-underlined">Exploring data-driven approaches to accelerate catalyst discovery and materials optimization.</div>
+      <div class="build-card-desc build-card-desc-underlined">Exploring AI/ML-driven approaches to accelerate catalyst discovery and materials optimization.</div>
       <ul>
         <li>Structure-property prediction</li>
         <li>Catalyst performance modeling</li>
@@ -159,7 +159,7 @@ calendar: true
         <line x1="25" y1="16" x2="19" y2="28"/>
       </svg> -->
       <img class="build-card-icon" src="{{ '/assets/img/WIB_4.png' | relative_url }}" alt="Autonomous & Self-driving Labs">
-      <div class="build-card-desc build-card-desc-underlined">Python-based workflows for processing electrochemical and XAS data.</div>
+      <div class="build-card-desc build-card-desc-underlined">Leveraging intelligent systems and automated experimentation to accelerate material discovery.</div>
       <ul>
         <li>Automated experimentation and synthesis</li>
         <li>Rapid experiment–learn–iterate cycles</li>
