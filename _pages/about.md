@@ -70,14 +70,14 @@ latest_posts:
 <span style="font-size: 1rem; font-weight: 470;">Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Researcher <a href='https://a3md.utoronto.ca/team/'>@A3MD</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
 PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a> </span style="color: #9ca3af;"> 
 <br><br> -->
-
+<!--  -->
 <div style="margin-left: 20px;">
   <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.08rem; margin-top: 0rem;">Wajdi Alnoush</span>
   <span style="font-size: 1.05rem; font-weight: 400;">
     Postdoctoral Research Fellow <a href='#'>@Employer</a><br>
     <span style="color: #7c8591;">
-      Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
-      PhD <a href='https://www.mcmaster.ca/'>@McMaster</a> <a href='https://a3md.utoronto.ca/team/'>@A3MD</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
+      Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Researcher <a href='https://a3md.utoronto.ca/team/'>@A3MD</a> & <a href='https://www.tamu.edu/'>@TAMU</a> <br>
+      PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a>
     </span>
   </span>
 </div>
