@@ -67,7 +67,7 @@ latest_posts:
 <span style="font-size: 1rem; font-weight: 470;">Postdoc <a href='#'>@Employer</a><br>
 <span>
 
-<span style="font-size: 1rem; font-weight: 470;">Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
+<span style="font-size: 1rem; font-weight: 470;">Previously: Visiting Research Scientist <a href='https://co2cert.com/'>@CO2CERT</a>, Researcher <a href='https://a3md.utoronto.ca/team/'>@A3MD</a>, Research Associate <a href='https://www.tamu.edu/'>@TAMU</a> <br>
 PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https://www.tamu.edu/'>@TAMU</a> </span style="color: #9ca3af;"> 
 <br><br> -->
 
