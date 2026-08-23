@@ -69,6 +69,19 @@ calendar: true
 </style>
 
 <div class="connect-row">
+  <div class="connect-label">
+    <i class="fa-regular fa-envelope"></i> Email me
+  </div>
+  <div class="connect-control">
+    <a href="mailto:wajdi.alnoush@gmail.com"
+       class="btn btn-primary"
+       style="font-size: 0.95rem; font-weight: 600; border-radius: 8px; padding: 6px 12px; width: 175px; height: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+      Email me
+    </a>
+  </div>
+</div>
+
+<div class="connect-row">
   <!-- <div class="connect-label"><i class="fa-regular fa-calendar"></i> Book a meeting</div> -->
   <div class="connect-label"><i class="fa-brands fa-google"></i> Book a meeting</div>
   <div class="connect-control">
@@ -83,6 +96,7 @@ calendar: true
     <div id="booking-button"></div>
   </div>
 </div>
+
 
 <div class="connect-row">
   <div class="connect-label"><i class="fa-regular fa-comment-dots"></i> Send me an anonymous message</div>
