@@ -52,9 +52,8 @@ calendar: true
 
 <style>
   .email-btn {width: 175px; height: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;
-  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #7fb8a3 !important;
+  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #9fb7a6 !important;
   color: #ffffff !important; font-size: 0.95rem; font-weight: 450; text-decoration: none !important; cursor: pointer;}
-
   .email-btn:hover {background-color: #6fa991 !important; color: #ffffff !important;}
   
   .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.4px solid #6b7280;}
@@ -80,7 +79,7 @@ calendar: true
 </div>
   <div class="connect-control">
     <a href="mailto:wajdi.alnoush@gmail.com"
-       class="btn btn-primary"
+       class="email-btn"
        style="font-size: 0.95rem; font-weight: 600; border-radius: 8px; padding: 6px 12px; width: 175px; height: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-decoration: none;">
       Email me
     </a>
