@@ -52,9 +52,9 @@ calendar: true
 
 <style>
   .email-btn {width: 175px; height: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;
-  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #C98282 !important; margin-right: 6px;
+  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #C97B5C !important; margin-right: 6px;
   color: #ffffff !important; font-size: 0.95rem; font-weight: 600; text-decoration: none !important; cursor: pointer;}
-  .email-btn:hover {background-color: #C98282 !important; color: #ffffff !important;}
+  .email-btn:hover {background-color: #C97B5C !important; color: #ffffff !important;}
   
   .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.4px solid #6b7280;}
   .connect-row:last-child {border-bottom: none;}
