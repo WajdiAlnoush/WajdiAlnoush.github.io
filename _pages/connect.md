@@ -55,7 +55,7 @@ calendar: true
   padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #7fb8a3 !important;
   color: #ffffff !important; font-size: 0.95rem; font-weight: 450; text-decoration: none !important; cursor: pointer;}
 
-.email-btn:hover {background-color: #6fa991 !important; color: #ffffff !important;}
+  .email-btn:hover {background-color: #6fa991 !important; color: #ffffff !important;}
   
   .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.4px solid #6b7280;}
   .connect-row:last-child {border-bottom: none;}
