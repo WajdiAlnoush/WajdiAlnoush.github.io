@@ -52,7 +52,7 @@ calendar: true
 
 <style>
   .email-btn {width: 175px; height: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;
-  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #9fb7a6 !important;
+  padding: 6px 12px; border: none !important; border-radius: 8px; background-color: #2fc6a3 !important; margin-right: 6px;
   color: #ffffff !important; font-size: 0.95rem; font-weight: 450; text-decoration: none !important; cursor: pointer;}
   .email-btn:hover {background-color: #6fa991 !important; color: #ffffff !important;}
   
