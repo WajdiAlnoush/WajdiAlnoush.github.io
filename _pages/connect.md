@@ -75,7 +75,7 @@ calendar: true
 
 <div class="connect-row">
   <div class="connect-label">
-    <i class="fa-regular fa-envelope"></i> Email me
+    <i class="fa-regular fa-envelope"></i> Send an Email
 </div>
   <div class="connect-control">
     <a href="mailto:wajdi.alnoush@gmail.com"
@@ -94,7 +94,7 @@ calendar: true
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
     <script>
       window.addEventListener('load', function () {calendar.schedulingButton.load({
-          url: 'https://calendar.app.google/NcTKFsykfF5UKwQe9?gv=true', color: '#7fb8a3', label: 'Book a meeting',
+          url: 'https://calendar.app.google/NcTKFsykfF5UKwQe9?gv=true', color: '#7fb8a3', label: 'Availability',
           target: document.getElementById('booking-button')});
       });
     </script>
