@@ -91,7 +91,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 
   <!-- <a href="{{ '/assets/pdf/Wajdi_Alnoush_CV.pdf' | relative_url }}" style="margin-right: 4.75px; display: inline-block; vertical-align: middle;" aria-label="Curriculum Vitae" title="Curriculum Vitae"> <img src="{{ '/assets/img/cv-icon.png' | relative_url }}" alt="CV" style="width: 26.9px; height: 24.3px; object-fit: contain; vertical-align: middle;position: relative; top: -6.2px;"></a> -->
 
-  <a href="{{ '/assets/pdf/Wajdi_Alnoush_CV.pdf' | relative_url }}"
+  <a href="{{ '/assets/pdf/CV - Wajdi Alnoush.pdf' | relative_url }}"
    class="cv-icon-link" aria-label="Curriculum Vitae" title="Curriculum Vitae"> <span class="cv-icon"></span></a>
 </div>
 

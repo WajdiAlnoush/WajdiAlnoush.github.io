@@ -9,7 +9,6 @@ calendar: true
 ---
 
 <!-- {% include calendar.liquid calendar_id='wajdi.alnoush@gmail.com' timezone='America/Toronto' %} -->
-
 <!-- <style>
   .connect-btn {font-size: 0.85rem; margin-right: 10px; margin-bottom: 10px;}
   .anon-form {max-width: 500px; margin-top: 1.5rem;}
