@@ -51,9 +51,8 @@ latest_posts:
   .btn.btn-sm.z-depth-0[href*="doi.org"] {border: none !important; background: transparent !important; box-shadow: none !important;
     font-size: 0; /* hides the "DOI" text */
     padding: 0 !important;}
-
   .btn.btn-sm.z-depth-0[href*="doi.org"]::before {font: var(--fa-font-solid); content: "\f35d"; font-size: 0.95rem; margin-top: 7px;}
-  
+
   .btn.btn-sm.z-depth-0[href*="scholar.google.com"] {border: none !important; box-shadow: none !important; padding: 0 !important;
   font-size: 0; /* hides the default "HTML" button text */
   display: inline-block; width: 16px; height: 16px; vertical-align: middle;
@@ -63,7 +62,6 @@ latest_posts:
 </style>
 
 <!-- <span style="font-size: 2rem; font-weight: 720; display: block; margin-bottom: 0.1rem;">Wajdi Alnoush</span>
-
 <span style="font-size: 1rem; font-weight: 470;">Postdoc <a href='#'>@Employer</a><br>
 <span>
 
@@ -98,9 +96,10 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent; clear: both;">
   <h4 style="font-size: 1.5rem; font-weight: 700;">About</h4>
     <p style="font-size: 1.05rem; font-weight: 390; margin-bottom: 1.5rem;">
-      I am a researcher working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific illustration, and dataViz.
-      I co-created and maintain <a href="#">Package1</a> and <a href="#">Package2</a>, along with several other
-      open-source projects. Lately I've been focusing on how XX can speed up YY.
+      I am an R&D scientist and (electro)chemical engineer  working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific visualization, and (as of recently) automation. 
+      <!-- I'm increasingly drawn to how machine learning can accelerate materials discovery and where autonomous, self-driving labs fit into that future. -->
+      <!-- I co-created and maintain <a href="#">Package1</a> and <a href="#">Package2</a>, along with several other
+      open-source projects. Lately I've been focusing on how XX can speed up YY. -->
     </p>
     <hr style="border: none; border-top: 0.4px solid #6b7280; margin: 0rem 1;">
     <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: -0.5rem; margin-top: -0.5rem;" class="card-title"><br>Recent publications</h4>
