@@ -55,21 +55,22 @@ calendar: true
   color: #ffffff !important; font-size: 0.95rem; font-weight: 600; text-decoration: none !important; cursor: pointer;}
   .email-btn:hover {background-color: #C97B5C !important; color: #ffffff !important;}
   
-  .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.25rem 0; border-bottom: 0.4px solid #6b7280;}
+  .connect-row {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.2rem 0; border-bottom: 0.4px solid #6b7280; min-height: 70px}
   .connect-row:last-child {border-bottom: none;}
   .connect-label {font-size: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0;}
-  .connect-control {flex: 1 1 auto; max-width: 440px; display: flex; justify-content: flex-end;}
+  .connect-control {flex: 1 1 auto; max-width: 440px; display: flex; justify-content: flex-end; min-height: 40px; align-items: center;}
   /* #booking-button button {font-size: 0.95rem !important; font-weight: 600; display: inline-flex !important; align-items: center !important; justify-content: center !important;}*/
 
   /*Anonymous message: textarea + button combined into one control*/
   .anon-wrapper {display: flex; align-items: center; gap: 0.8rem; width: 100%;}
   .anon-wrapper textarea {flex: 1 1 auto; padding: 0.5rem 0.65rem; border-radius: 8px; border: 0.4px solid #6b7280;
-    background: transparent; color: inherit; font-family: inherit; font-size: 0.9rem; font-weight: 450; resize: none; overflow: hidden; min-height: 40px; line-height: 1.1; align-content: center;}
-  .anon-wrapper button {flex-shrink: 0; font-size: 1rem; font-weight: 600; margin-left: auto; white-space: nowrap; background-color: var(--global-theme-color, #4fc3f7); color: #ffffff; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border:none; border-radius: 8px; padding: 6px 12px; cursor:pointer; width: 175px; height: 40px;}
+    background: transparent; color: inherit; font-family: inherit; font-size: 0.9rem; font-weight: 430; resize: none; overflow: hidden; min-height: 40px; line-height: 1.1; align-content: center;}
+  .anon-wrapper button {flex-shrink: 0; font-size: 1rem; font-weight: 600; margin-left: auto; white-space: nowrap; background-color: #2698ba; color: #ffffff; box-sizing: border-box; display: flex; align-it8ems: center; justify-content: center; border:none; border-radius: 8px; padding: 6px 12px; cursor:pointer; width: 175px; height: 40px;} 
   /* The book a meeting button */
   .qxCTlb {width: 175px !important; height: 40px !important; font-size: 0.95rem !important; font-weight: 450; border-radius: 8px !important; color: #ffffff !important; margin-right: 6px;}
   /* The buy me a coffee button */
-  .bmc-btn {transform: scale(0.767) !important; transform-origin: right center !important; margin-right: 7px;}
+  .bmc-btn {transform: scale(0.767) !important; transform-origin: right center !important; margin-right: 7px; margin-top: 0px !important;margin-bottom: 0px !important; }
+  .bmc-btn * {color: background-color: var(--global-bg-color) !important; font-family: inherit;}
 </style>
 
 <div class="connect-row">
@@ -113,14 +114,23 @@ calendar: true
 </div>
 
 <div class="connect-row">
-  <div class="connect-label">☕ Support my work</div>
+  <div class="connect-label"><i class="fa-solid fa-hand-holding-dollar"></i> Support my work</div>
   <div class="connect-control">
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="wajdialnoush" data-color="#FFD966" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#000000"></script>
   </div>
 </div>
 
 <script>
+  // Auto-grow the anonymous message textarea as the user types (with max height limit)
+  const anonTextarea = document.getElementById('anon-textarea');
+  anonTextarea.addEventListener('input', function () {
+    this.style.height = 'auto'; 
+    this.style.height = Math.min(this.scrollHeight, 160) + 'px'; // ← ADDED: Max height limit
+  });
+</script>
+
+<!-- <script>
   // Auto-grow the anonymous message textarea as the user types
   const anonTextarea = document.getElementById('anon-textarea');
   anonTextarea.addEventListener('input', function () {this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px';});
-</script>
+</script> -->

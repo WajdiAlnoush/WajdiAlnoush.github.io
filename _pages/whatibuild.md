@@ -4,7 +4,7 @@ permalink: /whatibuild/
 title: What I Build 
 description: What I design, build, and bring value to.
 nav: true
-nav_order: 4
+nav_order: 3
 calendar: true
 ---
 <style>
