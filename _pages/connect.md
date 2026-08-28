@@ -114,7 +114,7 @@ calendar: true
 </div>
 
 <div class="connect-row">
-  <div class="connect-label"><i class="fa-solid fa-hand-holding-dollar"></i> Support my work</div>
+  <div class="connect-label"><i class="fa-solid fa-circle-dollar-to-slot"></i> Support my work</div>
   <div class="connect-control">
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="wajdialnoush" data-color="#FFD966" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#000000"></script>
   </div>
