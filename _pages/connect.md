@@ -2,7 +2,7 @@
 layout: page
 permalink: /connect/
 title: Connect
-description: If you'd like to connect, you can book a meeting with me using the calendar below.
+description: Don't hesitate to reach out — email me, book a meeting, or send me an anonymous message below.
 nav: true
 nav_order: 6
 calendar: true
@@ -73,9 +73,10 @@ calendar: true
   .bmc-btn * {color: background-color: var(--global-bg-color) !important; font-family: inherit;}
 </style>
 
+
 <div class="connect-row">
   <div class="connect-label">
-    <i class="fa-regular fa-envelope"></i> Send an Email
+    <i class="fa-regular fa-envelope"></i> Send an email
 </div>
   <div class="connect-control">
     <a href="mailto:wajdi.alnoush@gmail.com"
@@ -106,10 +107,11 @@ calendar: true
 <div class="connect-row">
   <div class="connect-label"><i class="fa-regular fa-comment-dots"></i> Send me an anonymous message</div>
   <div class="connect-control">
-    <form action="https://formspree.io/f/xqpzdkkp" method="POST" class="anon-wrapper">
+    <form id="anon-form" action="https://formspree.io/f/xqpzdkkp" method="POST" class="anon-wrapper" target="anon_hidden_frame">
       <textarea name="message" id="anon-textarea" placeholder="Type your message here..." rows="1" required></textarea>
-      <button type="submit" class="btn btn-primary">Send anonymously</button>
+      <button type="submit" id="anon-submit-btn" class="btn btn-primary">Send anonymously</button>
     </form>
+    <iframe name="anon_hidden_frame" style="display: none;"></iframe>
   </div>
 </div>
 
@@ -120,12 +122,22 @@ calendar: true
   </div>
 </div>
 
+
 <script>
-  // Auto-grow the anonymous message textarea as the user types (with max height limit)
+  const anonForm = document.getElementById('anon-form');
   const anonTextarea = document.getElementById('anon-textarea');
+  const anonSubmitBtn = document.getElementById('anon-submit-btn');
+
   anonTextarea.addEventListener('input', function () {
-    this.style.height = 'auto'; 
-    this.style.height = Math.min(this.scrollHeight, 160) + 'px'; // ← ADDED: Max height limit
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 160) + 'px';
+  });
+
+  anonForm.addEventListener('submit', function () {
+    anonSubmitBtn.textContent = 'Sent ✓';
+    anonSubmitBtn.disabled = true;
+    anonSubmitBtn.style.opacity = '0.65';
+    anonSubmitBtn.style.cursor = 'not-allowed';
   });
 </script>
 
