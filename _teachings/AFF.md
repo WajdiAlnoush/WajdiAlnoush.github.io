@@ -5,7 +5,7 @@ university: Texas A&M
 description: CIRTL Associates have a strong foundation in evidence-based teaching and learning practices, are able to describe these practices, and recognize their value for improving undergraduate learning.
 instructor: Centre for the Integration of Research, Teaching, and Learning (CIRTL)
 teaching_type: certificate 
-year: 2023
+year: 2020
 term: Fall
 # location: Main Campus, Room 301
 # time: Tuesdays and Thursdays, 10:00-11:30 AM
