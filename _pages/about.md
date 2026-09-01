@@ -97,7 +97,7 @@ PhD <a href='https://www.mcmaster.ca/'>@McMaster</a>, MSc & BSc <a href='https:/
 <div style="border: 0.4px solid #6b7280; border-radius: 10px; padding: 1.5rem; background-color: transparent; clear: both;">
   <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.1rem;">About</h4>
     <p style="font-size: 1.05rem; font-weight: 390; margin-bottom: 1.5rem;">
-      I am an R&D scientist and (electro)chemical engineer  working at the intersection of chemical engineering, materials science, and data science. I am passionate about teaching, scientific visualization, and (as of recently) automation. 
+      I am an R&D scientist and (electro)chemical engineer  working at the intersection of chemical engineering, materials science, and data science. I am passionate about climate tech, education, scientific visualization, and (as of recently) automation. 
       <!-- I'm increasingly drawn to how machine learning can accelerate materials discovery and where autonomous, self-driving labs fit into that future. -->
       <!-- I co-created and maintain <a href="#">Package1</a> and <a href="#">Package2</a>, along with several other
       open-source projects. Lately I've been focusing on how XX can speed up YY. -->
