@@ -22,7 +22,7 @@ calendar: true
 </style>
 
 <div class="build-section">
-  <div class="build-heading">What I Build</div>
+  <div class="build-heading">Domains of Expertise</div>
   <div class="build-row">
 
     <div class="build-card">
@@ -119,11 +119,11 @@ calendar: true
 
 
 <div class="build-section">
-  <div class="build-heading">Growing Interests</div>
+  <div class="build-heading">Areas of Exploration</div>
   <div class="build-row">
 
     <div class="build-card">
-      <div class="build-card-title">Al/ML-driven Material Discovery</div>
+      <div class="build-card-title">AI/ML-driven Material Discovery</div>
       <!-- <svg class="build-card-icon" viewBox="0 0 48 48" fill="none" stroke="#4fc3f7" stroke-width="1.5">
         <rect x="6" y="8" width="10" height="8" rx="1"/>
         <rect x="20" y="8" width="10" height="8" rx="1"/>
