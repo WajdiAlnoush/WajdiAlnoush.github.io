@@ -10,6 +10,6 @@ children:
   # - title: num2
   # - title: blog
   #   permalink: /blog/
-  - title: ProgressTrack
-    permalink: /👤/
+  - title: 👤
+    permalink: /ProgressTrack/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /👤/
+permalink: /ProgressTrack/
 title: 
 nav: false
 ---
@@ -12,7 +12,7 @@ nav: false
   .password-gate p.error {color: #e76f51; font-size: 0.85rem; margin-top: 0.6rem; display: none;}
 
   /* Project Card Styles */  
-  .project-card {background:rgba(255, 255, 255, 0.025); border-radius: 16px; padding: 1.1rem 1.25rem 1.1rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07); border: 0.6px solid var(--global-border-color, #e8e8e8); transition: transform 0.2s ease, box-shadow 0.2s ease;}
+  .project-card {background:rgba(255, 255, 255, 0.02); border-radius: 16px; padding: 1.1rem 1.25rem 1.1rem 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07); border: 0.5px solid var(--global-border-color, #e8e8e8); transition: transform 0.2s ease, box-shadow 0.2s ease;}
 
   .project-card:hover {transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);}
   .project-header {display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.2rem;}
@@ -67,7 +67,7 @@ nav: false
 </style>
 
 <div id="password-gate" class="password-gate">
-  <p>This page is for friends only 👀</p>
+  <p>Enter password to view 👀</p>
   <div>
     <input type="password" id="page-password" placeholder="Enter password">
     <button onclick="checkPassword()">Unlock</button>
