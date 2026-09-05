@@ -20,29 +20,12 @@ calendar: true
     min-width: 280px; box-sizing: border-box;}
   .teaching-course-title {font-size: 1.15rem; font-weight: 700; color: var(--global-theme-color, #4fc3f7);}
   .teaching-course-meta {color: #9ca3af; font-size: 0.95rem;}
-
   .teaching-course-desc-wrapper {position: relative; margin-top: 0.5rem;}
   .teaching-course-desc {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 0;}
   .teaching-course-desc.expanded {display: block; -webkit-line-clamp: unset; overflow: visible;}
-
-  .teaching-readmore {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-left: 0.4rem;
-    background: var(--global-bg-color, #1b1b1e);
-    color: #9ca3af;
-    text-decoration: underline dotted;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  .teaching-readmore.static {
-    position: static;
-    display: inline-block;
-    margin-top: 0.3rem;
-    background: none;
-    padding-left: 0;
-  }
+  .teaching-readmore {position: absolute; right: 0; bottom: 0; padding-left: 0.4rem; background: var(--global-bg-color, #1b1b1e);
+    color: #9ca3af; text-decoration: underline dotted; cursor: pointer; font-size: 1rem;}
+  .teaching-readmore.static {position: static; display: inline-block; margin-top: 0.3rem; background: none; padding-left: 0;}
 </style>
 
 {% assign courses_by_university = site.teachings | group_by: "university" %}
