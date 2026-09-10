@@ -375,12 +375,12 @@ nav: false
   
 
   const projects = [
-  { id: 1, doneHours: 12, totalHours: 40, color: 'filled' },
-  { id: 2, doneHours: 8,  totalHours: 50, color: 'filled-green' },
+  { id: 1, doneHours: 12, totalHours: 60, color: 'filled'},
+  { id: 2, doneHours: 8,  totalHours: 60, color: 'filled-green' },
   { id: 3, doneHours: 15, totalHours: 100, color: 'filled-purple' },
-  { id: 4, doneHours: 6,  totalHours: 30, color: 'filled-orange' },
-  { id: 5, doneHours: 6,  totalHours: 28, color: 'filled-pink' },
-  { id: 6, doneHours: 10, totalHours: 34, color: 'filled-green' }
+  { id: 4, doneHours: 6,  totalHours: 80, color: 'filled-orange' },
+  { id: 5, doneHours: 6,  totalHours: 80, color: 'filled-pink' },
+  { id: 6, doneHours: 10, totalHours: 80, color: 'filled-green' }
   ].map(p => ({
   id: p.id,
   color: p.color,
