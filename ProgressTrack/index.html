@@ -69,56 +69,43 @@
   const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
   const SESSION_MINUTES = 20;
   const SESSIONS_PER_HOUR = 60 / SESSION_MINUTES; // = 3
-  const STORAGE_PREFIX = 'progressTrack_project_';
+  // const STORAGE_PREFIX = 'progressTrack_project_';
+  
+
   const projects = [
-    { id: 1, doneHours: 12, totalHours: 40, color: 'filled' },
-    { id: 2, doneHours: 8,  totalHours: 50, color: 'filled-green' },
-    { id: 3, doneHours: 15, totalHours: 100, color: 'filled-purple' },
-    { id: 4, doneHours: 6,  totalHours: 30, color: 'filled-orange' },
-    { id: 5, doneHours: 6,  totalHours: 28, color: 'filled-pink' },
-    { id: 6, doneHours: 10, totalHours: 34, color: 'filled-green' }
-  ].map(p => {
-    const baseDoneSessions = Math.round(p.doneHours * SESSIONS_PER_HOUR);
-    const totalSessions = Math.round(p.totalHours * SESSIONS_PER_HOUR);
-    // Try to load a saved value from localStorage for this project
-    const saved = loadSavedProgress(p.id, baseDoneSessions, totalSessions);
-    return {
-      id: p.id,
-      color: p.color,
-      baseDoneSessions, // the value YOU set in code -- used to detect when you've updated it
-      totalSessions,
-      doneSessions: saved !== null ? saved : baseDoneSessions
-    };
+  { id: 1, doneHours: 12, totalHours: 40, color: 'filled' },
+  { id: 2, doneHours: 8,  totalHours: 50, color: 'filled-green' },
+  { id: 3, doneHours: 15, totalHours: 100, color: 'filled-purple' },
+  { id: 4, doneHours: 6,  totalHours: 30, color: 'filled-orange' },
+  { id: 5, doneHours: 6,  totalHours: 28, color: 'filled-pink' },
+  { id: 6, doneHours: 10, totalHours: 34, color: 'filled-green' }
+  ].map(p => ({
+  id: p.id,
+  color: p.color,
+  baseDoneSessions: Math.round(p.doneHours * SESSIONS_PER_HOUR),
+  totalSessions: Math.round(p.totalHours * SESSIONS_PER_HOUR),
+  doneSessions: Math.round(p.doneHours * SESSIONS_PER_HOUR)
+  }));
+
+  async function loadCloudProgress() {
+  const { data, error } = await db
+    .from('progress_tracker')
+    .select('project_id, done_sessions, total_sessions');
+
+  if (error) {
+    console.error('Could not load progress from Supabase:', error);
+    return;
+  }
+
+  data.forEach(row => {
+    const project = projects.find(p => p.id === row.project_id);
+
+    if (project && row.total_sessions === project.totalSessions) {
+      project.doneSessions = row.done_sessions;
+    }
   });
-  // Reads localStorage for this project's progress.
-  // If the stored baseline (what YOU had set) doesn't match the current code's baseline,
-  // that means you pushed an update -- so we discard the old saved value and start fresh.
-  function loadSavedProgress(projectId, currentBaseDoneSessions, currentTotalSessions) {
-    try {
-      const raw = localStorage.getItem(STORAGE_PREFIX + projectId);
-      if (!raw) return null;
-      const data = JSON.parse(raw);
-      if (data.baseDoneSessions === currentBaseDoneSessions && data.totalSessions === currentTotalSessions) {
-        return data.doneSessions;
-      }
-      // Baseline changed (you updated the numbers) -- ignore old saved progress
-      localStorage.removeItem(STORAGE_PREFIX + projectId);
-      return null;
-    } catch (e) {
-      return null;
-    }
   }
-  function saveProgress(project) {
-    try {
-      localStorage.setItem(STORAGE_PREFIX + project.id, JSON.stringify({
-        baseDoneSessions: project.baseDoneSessions,
-        totalSessions: project.totalSessions,
-        doneSessions: project.doneSessions
-      }));
-    } catch (e) {
-      // localStorage unavailable (private browsing, etc.) -- fail silently, progress just won't persist
-    }
-  }
+
   const MAX_BOXES = 150;
   function renderGrid(projectId, doneSessions, totalSessions, colorClass) {
     const grid = document.getElementById(`grid-${projectId}`);
@@ -177,6 +164,22 @@
     const hrs = sessions / SESSIONS_PER_HOUR;
     return Number.isInteger(hrs) ? hrs : hrs.toFixed(1);
   }
+  
+  async function saveProgress(project) {
+    const { error } = await db
+      .from('progress_tracker')
+      .update({
+        done_sessions: project.doneSessions,
+        updated_at: new Date().toISOString()
+      })
+      .eq('project_id', project.id);
+
+    if (error) {
+      console.error('Could not save progress to Supabase:', error);
+    }
+    }
+  
+  
   function updateCounts(projectId, deltaSessions) {
     const project = projects.find(p => p.id === projectId);
     if (!project) return;
@@ -206,7 +209,8 @@
     }
   }
 
-  function initializeGrids() {
+  async function initializeGrids() {
+    await loadCloudProgress();
     projects.forEach(p => {
       document.getElementById(`hours-done-${p.id}`).textContent = formatHours(p.doneSessions);
       document.getElementById(`hours-total-${p.id}`).textContent = formatHours(p.totalSessions);
