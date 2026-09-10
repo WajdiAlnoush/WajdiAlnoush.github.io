@@ -186,7 +186,7 @@ nav: false
     <!-- PROJECT 6 -->
     <div class="project-card">
       <div class="project-header">
-        <h2 class="project-title">Reverse Sweep Paper</h2>
+        <h2 class="project-title">nx-Functionality Paper</h2>
         <div class="project-hours">
           <span id="hours-done-6" class="color-filled-green">6</span> / <span id="hours-total-6" class="color-filled-green">30</span> hrs
         </div>
