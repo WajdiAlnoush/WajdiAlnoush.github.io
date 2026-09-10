@@ -364,11 +364,14 @@ nav: false
   });
 </script> -->
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+  const SUPABASE_URL = 'https://ocewglkdodwdnlpuyomg.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_mk3-nlY0w1OExLGLK336vw_UZH_gXcl';
+  const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
   const SESSION_MINUTES = 20;
   const SESSIONS_PER_HOUR = 60 / SESSION_MINUTES; // = 3
   const STORAGE_PREFIX = 'progressTrack_project_';
-
   const projects = [
     { id: 1, doneHours: 12, totalHours: 40, color: 'filled' },
     { id: 2, doneHours: 8,  totalHours: 50, color: 'filled-green' },
@@ -379,10 +382,8 @@ nav: false
   ].map(p => {
     const baseDoneSessions = Math.round(p.doneHours * SESSIONS_PER_HOUR);
     const totalSessions = Math.round(p.totalHours * SESSIONS_PER_HOUR);
-
     // Try to load a saved value from localStorage for this project
     const saved = loadSavedProgress(p.id, baseDoneSessions, totalSessions);
-
     return {
       id: p.id,
       color: p.color,
@@ -391,7 +392,6 @@ nav: false
       doneSessions: saved !== null ? saved : baseDoneSessions
     };
   });
-
   // Reads localStorage for this project's progress.
   // If the stored baseline (what YOU had set) doesn't match the current code's baseline,
   // that means you pushed an update -- so we discard the old saved value and start fresh.
@@ -399,7 +399,6 @@ nav: false
     try {
       const raw = localStorage.getItem(STORAGE_PREFIX + projectId);
       if (!raw) return null;
-
       const data = JSON.parse(raw);
       if (data.baseDoneSessions === currentBaseDoneSessions && data.totalSessions === currentTotalSessions) {
         return data.doneSessions;
@@ -411,7 +410,6 @@ nav: false
       return null;
     }
   }
-
   function saveProgress(project) {
     try {
       localStorage.setItem(STORAGE_PREFIX + project.id, JSON.stringify({
@@ -423,18 +421,13 @@ nav: false
       // localStorage unavailable (private browsing, etc.) -- fail silently, progress just won't persist
     }
   }
-
   const MAX_BOXES = 150;
-
   function renderGrid(projectId, doneSessions, totalSessions, colorClass) {
     const grid = document.getElementById(`grid-${projectId}`);
     if (!grid) return;
-
     const displayTotal = Math.min(totalSessions, MAX_BOXES);
     const displayDone = Math.min(doneSessions, displayTotal);
-
     grid.innerHTML = '';
-
     for (let i = 0; i < displayDone; i++) {
       const box = document.createElement('div');
       box.className = `hour-box ${colorClass}`;
@@ -452,7 +445,6 @@ nav: false
       });
       grid.appendChild(box);
     }
-
     for (let i = displayDone; i < displayTotal; i++) {
       const box = document.createElement('div');
       box.className = 'hour-box';
@@ -466,7 +458,6 @@ nav: false
       });
       grid.appendChild(box);
     }
-
     if (totalSessions > MAX_BOXES) {
       const ellipsis = document.createElement('div');
       ellipsis.style.cssText = `
@@ -484,34 +475,26 @@ nav: false
       grid.appendChild(ellipsis);
     }
   }
-
   function formatHours(sessions) {
     const hrs = sessions / SESSIONS_PER_HOUR;
     return Number.isInteger(hrs) ? hrs : hrs.toFixed(1);
   }
-
   function updateCounts(projectId, deltaSessions) {
     const project = projects.find(p => p.id === projectId);
     if (!project) return;
-
     const newDoneSessions = Math.max(0, Math.min(project.doneSessions + deltaSessions, project.totalSessions));
     project.doneSessions = newDoneSessions;
-
     const doneHours = formatHours(newDoneSessions);
     const totalHours = formatHours(project.totalSessions);
     const remainingHours = formatHours(project.totalSessions - newDoneSessions);
-
     document.getElementById(`hours-done-${projectId}`).textContent = doneHours;
     document.getElementById(`hours-total-${projectId}`).textContent = totalHours;
     document.getElementById(`hours-remaining-${projectId}`).textContent = remainingHours;
-
     const pct = Math.round((newDoneSessions / project.totalSessions) * 100);
     document.getElementById(`progress-pct-${projectId}`).textContent = pct;
-
     renderGrid(projectId, newDoneSessions, project.totalSessions, project.color);
     saveProgress(project); // persist this change
   }
-
   function checkPassword() {
     const input = document.getElementById('page-password').value;
     const errorMsg = document.getElementById('wrong-password-msg');
