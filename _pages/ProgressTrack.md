@@ -364,7 +364,8 @@ nav: false
   });
 </script> -->
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://ocewglkdodwdnlpuyomg.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_mk3-nlY0w1OExLGLK336vw_UZH_gXcl';
@@ -520,6 +521,212 @@ nav: false
       const pct = Math.round((p.doneSessions / p.totalSessions) * 100);
       document.getElementById(`progress-pct-${p.id}`).textContent = pct;
 
+      renderGrid(p.id, p.doneSessions, p.totalSessions, p.color);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (sessionStorage.getItem('progressUnlocked') === 'true') {
+      document.getElementById('password-gate').style.display = 'none';
+      document.getElementById('protected-content').style.display = 'block';
+      initializeGrids();
+    }
+  });
+
+  document.getElementById('page-password').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      checkPassword();
+    }
+  });
+</script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://ocewglkdodwdnlpuyomg.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_mk3-nlY0w1OExLGLK336vw_UZH_gXcl';
+  const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  const SESSION_MINUTES = 20;
+  const SESSIONS_PER_HOUR = 60 / SESSION_MINUTES; // = 3
+
+  const projects = [
+    { id: 1, doneHours: 12, totalHours: 60, color: 'filled' },
+    { id: 2, doneHours: 8,  totalHours: 60, color: 'filled-green' },
+    { id: 3, doneHours: 15, totalHours: 100, color: 'filled-purple' },
+    { id: 4, doneHours: 6,  totalHours: 80, color: 'filled-orange' },
+    { id: 5, doneHours: 6,  totalHours: 80, color: 'filled-pink' },
+    { id: 6, doneHours: 10, totalHours: 80, color: 'filled-green' }
+  ].map(p => ({
+    id: p.id,
+    color: p.color,
+    totalSessions: Math.round(p.totalHours * SESSIONS_PER_HOUR),
+    doneSessions: Math.round(p.doneHours * SESSIONS_PER_HOUR) // fallback only used if no DB row exists yet
+  }));
+
+  // Loads saved progress from Supabase. Crucially: this NEVER discards done_sessions
+  // just because totalHours changed in the code. Instead, it keeps the saved progress
+  // and simply syncs the "total" capacity to match your latest code, clamping down
+  // only if the new total is now smaller than the saved progress (can't have more done than total).
+  async function loadCloudProgress() {
+    const { data, error } = await db
+      .from('progress_tracker')
+      .select('project_id, done_sessions, total_sessions');
+
+    if (error) {
+      console.error('Could not load progress from Supabase:', error);
+      return;
+    }
+
+    for (const project of projects) {
+      const row = data.find(r => r.project_id === project.id);
+
+      if (row) {
+        // Preserve saved progress, just clamp it if the new total is smaller than what was saved
+        project.doneSessions = Math.min(row.done_sessions, project.totalSessions);
+
+        // If the total changed in code since this row was last saved, sync it in the DB now
+        // (without touching done_sessions beyond the clamp above)
+        if (row.total_sessions !== project.totalSessions) {
+          const { error: syncError } = await db
+            .from('progress_tracker')
+            .update({
+              total_sessions: project.totalSessions,
+              done_sessions: project.doneSessions,
+              updated_at: new Date().toISOString()
+            })
+            .eq('project_id', project.id);
+          if (syncError) console.error('Could not sync total_sessions:', syncError);
+        }
+      } else {
+        // First time this project has ever been seen -- create its row using the code's starting values
+        const { error: insertError } = await db
+          .from('progress_tracker')
+          .insert({
+            project_id: project.id,
+            done_sessions: project.doneSessions,
+            total_sessions: project.totalSessions,
+            updated_at: new Date().toISOString()
+          });
+        if (insertError) console.error('Could not create initial row:', insertError);
+      }
+    }
+  }
+
+  const MAX_BOXES = 150;
+
+  function renderGrid(projectId, doneSessions, totalSessions, colorClass) {
+    const grid = document.getElementById(`grid-${projectId}`);
+    if (!grid) return;
+    const displayTotal = Math.min(totalSessions, MAX_BOXES);
+    const displayDone = Math.min(doneSessions, displayTotal);
+    grid.innerHTML = '';
+    for (let i = 0; i < displayDone; i++) {
+      const box = document.createElement('div');
+      box.className = `hour-box ${colorClass}`;
+      box.title = `Session ${i + 1} (20 min) completed`;
+      box.addEventListener('click', function () {
+        if (this.classList.contains(colorClass)) {
+          this.classList.remove(colorClass);
+          this.classList.add('hour-box');
+          updateCounts(projectId, -1);
+        } else {
+          this.classList.remove('hour-box');
+          this.classList.add(colorClass);
+          updateCounts(projectId, 1);
+        }
+      });
+      grid.appendChild(box);
+    }
+    for (let i = displayDone; i < displayTotal; i++) {
+      const box = document.createElement('div');
+      box.className = 'hour-box';
+      box.title = `Session ${i + 1} (20 min) - not yet completed`;
+      box.addEventListener('click', function () {
+        if (!this.classList.contains(colorClass)) {
+          this.classList.remove('hour-box');
+          this.classList.add(colorClass);
+          updateCounts(projectId, 1);
+        }
+      });
+      grid.appendChild(box);
+    }
+    if (totalSessions > MAX_BOXES) {
+      const ellipsis = document.createElement('div');
+      ellipsis.style.cssText = `
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        color: var(--global-text-color-secondary, #6b7280);
+        aspect-ratio: 1;
+        min-width: 12px;
+        min-height: 12px;
+      `;
+      ellipsis.textContent = '…';
+      ellipsis.title = `${totalSessions - MAX_BOXES} more sessions not shown`;
+      grid.appendChild(ellipsis);
+    }
+  }
+
+  function formatHours(sessions) {
+    const hrs = sessions / SESSIONS_PER_HOUR;
+    return Number.isInteger(hrs) ? hrs : hrs.toFixed(1);
+  }
+
+  // Always upserts BOTH done_sessions and total_sessions together, so they never drift apart again
+  async function saveProgress(project) {
+    const { error } = await db
+      .from('progress_tracker')
+      .upsert({
+        project_id: project.id,
+        done_sessions: project.doneSessions,
+        total_sessions: project.totalSessions,
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'project_id' });
+
+    if (error) {
+      console.error('Could not save progress to Supabase:', error);
+    }
+  }
+
+  function updateCounts(projectId, deltaSessions) {
+    const project = projects.find(p => p.id === projectId);
+    if (!project) return;
+    const newDoneSessions = Math.max(0, Math.min(project.doneSessions + deltaSessions, project.totalSessions));
+    project.doneSessions = newDoneSessions;
+    const doneHours = formatHours(newDoneSessions);
+    const totalHours = formatHours(project.totalSessions);
+    const remainingHours = formatHours(project.totalSessions - newDoneSessions);
+    document.getElementById(`hours-done-${projectId}`).textContent = doneHours;
+    document.getElementById(`hours-total-${projectId}`).textContent = totalHours;
+    document.getElementById(`hours-remaining-${projectId}`).textContent = remainingHours;
+    const pct = Math.round((newDoneSessions / project.totalSessions) * 100);
+    document.getElementById(`progress-pct-${projectId}`).textContent = pct;
+    renderGrid(projectId, newDoneSessions, project.totalSessions, project.color);
+    saveProgress(project);
+  }
+
+  function checkPassword() {
+    const input = document.getElementById('page-password').value;
+    const errorMsg = document.getElementById('wrong-password-msg');
+    if (input === "Nayef2026" || input === "Wajdi2026") {
+      document.getElementById('password-gate').style.display = 'none';
+      document.getElementById('protected-content').style.display = 'block';
+      sessionStorage.setItem('progressUnlocked', 'true');
+      initializeGrids();
+    } else {
+      errorMsg.style.display = 'block';
+    }
+  }
+
+  async function initializeGrids() {
+    await loadCloudProgress();
+    projects.forEach(p => {
+      document.getElementById(`hours-done-${p.id}`).textContent = formatHours(p.doneSessions);
+      document.getElementById(`hours-total-${p.id}`).textContent = formatHours(p.totalSessions);
+      document.getElementById(`hours-remaining-${p.id}`).textContent = formatHours(p.totalSessions - p.doneSessions);
+      const pct = Math.round((p.doneSessions / p.totalSessions) * 100);
+      document.getElementById(`progress-pct-${p.id}`).textContent = pct;
       renderGrid(p.id, p.doneSessions, p.totalSessions, p.color);
     });
   }
