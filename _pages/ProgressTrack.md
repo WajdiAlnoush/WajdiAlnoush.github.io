@@ -86,12 +86,12 @@ nav: false
     <!-- PROJECT 1 -->
     <div class="project-card">
       <div class="project-header">
-        <h2 class="project-title">Rejected paper</h2>
+        <h2 class="project-title">Capillary Trapping in Printed Porous Media</h2>
         <div class="project-hours">
           <span id="hours-done-1" class="color-filled">12</span> / <span id="hours-total-1" class="color-filled">40</span> hrs
         </div>
       </div>
-      <p class="project-description">Designing and coding a personal portfolio site.</p>
+      <p class="project-description">Manuscript Revision & Figrue-List Restructuring.</p>
       
       <div class="hour-grid" id="grid-1">
         <!-- Will be populated by JavaScript -->
@@ -111,7 +111,7 @@ nav: false
           <span id="hours-done-2" class="color-filled-green">8</span> / <span id="hours-total-2" class="color-filled-green">50</span> hrs
         </div>
       </div>
-      <p class="project-description">Mastering Python for data science and automation.</p>
+      <p class="project-description">Manuscript Revision & Figrue-List Restructuring.</p>
       
       <div class="hour-grid" id="grid-2">
         <!-- Will be populated by JavaScript -->
@@ -131,7 +131,7 @@ nav: false
           <span id="hours-done-3" class="color-filled-purple">15</span> / <span id="hours-total-3" class="color-filled-purple">100</span> hrs
         </div>
       </div>
-      <p class="project-description">Consistent workout routine and health tracking.</p>
+      <p class="project-description">Chapters 5-9.</p>
       
       <div class="hour-grid" id="grid-3">
         <!-- Will be populated by JavaScript -->
@@ -151,7 +151,7 @@ nav: false
           <span id="hours-done-4" class="color-filled-orange">6</span> / <span id="hours-total-4" class="color-filled-orange">30</span> hrs
         </div>
       </div>
-      <p class="project-description">Reading 12 books this year.</p>
+      <p class="project-description">Outline drafting and Figure-list preparation.</p>
       
       <div class="hour-grid" id="grid-4">
         <!-- Will be populated by JavaScript -->
@@ -171,7 +171,7 @@ nav: false
           <span id="hours-done-5" class="color-filled-pink">6</span> / <span id="hours-total-5" class="color-filled-pink">30</span> hrs
         </div>
       </div>
-      <p class="project-description">Reading 12 books this year.</p>
+      <p class="project-description">Outline drafting and Figure-list preparation.</p>
       
       <div class="hour-grid" id="grid-5">
         <!-- Will be populated by JavaScript -->
@@ -191,7 +191,7 @@ nav: false
           <span id="hours-done-6" class="color-filled-green">6</span> / <span id="hours-total-6" class="color-filled-green">30</span> hrs
         </div>
       </div>
-      <p class="project-description">Reading 12 books this year.</p>
+      <p class="project-description">Outline drafting and Figure-list preparation.</p>
       
       <div class="hour-grid" id="grid-6">
         <!-- Will be populated by JavaScript -->
@@ -212,157 +212,6 @@ nav: false
 
 </div>
 
-<!-- <script>
-  const SESSION_MINUTES = 20;
-  const SESSIONS_PER_HOUR = 60 / SESSION_MINUTES; // = 3
-
-  // Project data is stored in SESSIONS internally (each box = 1 session = 20 min)
-  // doneHours/totalHours below are just the *initial* values you set, converted once at load
-  const projects = [
-    { id: 1, doneHours: 12, totalHours: 40, color: 'filled' },
-    { id: 2, doneHours: 8,  totalHours: 50, color: 'filled-green' },
-    { id: 3, doneHours: 15, totalHours: 100, color: 'filled-purple' },
-    { id: 4, doneHours: 6,  totalHours: 30, color: 'filled-orange' },
-    { id: 5, doneHours: 6,  totalHours: 28, color: 'filled-pink' },
-    { id: 6, doneHours: 10, totalHours: 34, color: 'filled-green' }
-  ].map(p => ({
-    id: p.id,
-    color: p.color,
-    doneSessions: Math.round(p.doneHours * SESSIONS_PER_HOUR),
-    totalSessions: Math.round(p.totalHours * SESSIONS_PER_HOUR)
-  }));
-
-  // Raise this if you want more boxes visible before truncating with "…"
-  // (totals are now 3x larger than before, since each box is 20 min instead of 1 hr)
-  const MAX_BOXES = 150;
-
-  function renderGrid(projectId, doneSessions, totalSessions, colorClass) {
-    const grid = document.getElementById(`grid-${projectId}`);
-    if (!grid) return;
-
-    const displayTotal = Math.min(totalSessions, MAX_BOXES);
-    const displayDone = Math.min(doneSessions, displayTotal);
-
-    grid.innerHTML = '';
-
-    for (let i = 0; i < displayDone; i++) {
-      const box = document.createElement('div');
-      box.className = `hour-box ${colorClass}`;
-      box.title = `Session ${i + 1} (20 min) completed`;
-      box.addEventListener('click', function () {
-        if (this.classList.contains(colorClass)) {
-          this.classList.remove(colorClass);
-          this.classList.add('hour-box');
-          updateCounts(projectId, -1);
-        } else {
-          this.classList.remove('hour-box');
-          this.classList.add(colorClass);
-          updateCounts(projectId, 1);
-        }
-      });
-      grid.appendChild(box);
-    }
-
-    for (let i = displayDone; i < displayTotal; i++) {
-      const box = document.createElement('div');
-      box.className = 'hour-box';
-      box.title = `Session ${i + 1} (20 min) - not yet completed`;
-      box.addEventListener('click', function () {
-        if (!this.classList.contains(colorClass)) {
-          this.classList.remove('hour-box');
-          this.classList.add(colorClass);
-          updateCounts(projectId, 1);
-        }
-      });
-      grid.appendChild(box);
-    }
-
-    if (totalSessions > MAX_BOXES) {
-      const ellipsis = document.createElement('div');
-      ellipsis.style.cssText = `
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.8rem;
-        color: var(--global-text-color-secondary, #6b7280);
-        aspect-ratio: 1;
-        min-width: 12px;
-        min-height: 12px;
-      `;
-      ellipsis.textContent = '…';
-      ellipsis.title = `${totalSessions - MAX_BOXES} more sessions not shown`;
-      grid.appendChild(ellipsis);
-    }
-  }
-
-  function formatHours(sessions) {
-    // Convert sessions back to hours, trimming to at most 1 decimal place
-    const hrs = sessions / SESSIONS_PER_HOUR;
-    return Number.isInteger(hrs) ? hrs : hrs.toFixed(1);
-  }
-
-  function updateCounts(projectId, deltaSessions) {
-    const project = projects.find(p => p.id === projectId);
-    if (!project) return;
-
-    const newDoneSessions = Math.max(0, Math.min(project.doneSessions + deltaSessions, project.totalSessions));
-    project.doneSessions = newDoneSessions;
-
-    const doneHours = formatHours(newDoneSessions);
-    const totalHours = formatHours(project.totalSessions);
-    const remainingHours = formatHours(project.totalSessions - newDoneSessions);
-
-    document.getElementById(`hours-done-${projectId}`).textContent = doneHours;
-    document.getElementById(`hours-total-${projectId}`).textContent = totalHours;
-    document.getElementById(`hours-remaining-${projectId}`).textContent = remainingHours;
-
-    const pct = Math.round((newDoneSessions / project.totalSessions) * 100);
-    document.getElementById(`progress-pct-${projectId}`).textContent = pct;
-
-    renderGrid(projectId, newDoneSessions, project.totalSessions, project.color);
-  }
-
-  function checkPassword() {
-    const input = document.getElementById('page-password').value;
-    const errorMsg = document.getElementById('wrong-password-msg');
-    if (input === "Nayef2026" || input === "Wajdi2026") {
-      document.getElementById('password-gate').style.display = 'none';
-      document.getElementById('protected-content').style.display = 'block';
-      sessionStorage.setItem('progressUnlocked', 'true');
-      initializeGrids();
-    } else {
-      errorMsg.style.display = 'block';
-    }
-  }
-
-  function initializeGrids() {
-    projects.forEach(p => {
-      // Also sync the initial displayed hours/percent labels on first load,
-      // in case they don't already match your HTML's hardcoded starting numbers
-      document.getElementById(`hours-done-${p.id}`).textContent = formatHours(p.doneSessions);
-      document.getElementById(`hours-total-${p.id}`).textContent = formatHours(p.totalSessions);
-      document.getElementById(`hours-remaining-${p.id}`).textContent = formatHours(p.totalSessions - p.doneSessions);
-      const pct = Math.round((p.doneSessions / p.totalSessions) * 100);
-      document.getElementById(`progress-pct-${p.id}`).textContent = pct;
-
-      renderGrid(p.id, p.doneSessions, p.totalSessions, p.color);
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    if (sessionStorage.getItem('progressUnlocked') === 'true') {
-      document.getElementById('password-gate').style.display = 'none';
-      document.getElementById('protected-content').style.display = 'block';
-      initializeGrids();
-    }
-  });
-
-  document.getElementById('page-password').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      checkPassword();
-    }
-  });
-</script> -->
 
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
