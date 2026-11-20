@@ -21,7 +21,7 @@ schedule:
     #     url: /assets/pdf/example_pdf.pdf
 
   - week: 2
-    date: Sept 12
+    #date: Sept 12
     topic: Thermodynamic Properties and Relations
     description: "- PVT behaviors and equation of state
                   – Free energy and property relations
@@ -33,7 +33,7 @@ schedule:
     #     url: /assets/pdf/example_pdf.pdf
 
   - week: 3
-    date: Sept 19
+    #date: Sept 19
     topic: Vapor-Liquid Equilibrium (VLE)
     description: Logistic regression, decision boundaries, and multi-class classification.
     # materials:
@@ -43,7 +43,7 @@ schedule:
     #     url: https://github.com/
 
   - week: 4
-    date: Sept 26
+    #date: Sept 26
     topic: Solution Theory – Thermodynamic Properties of Mixtures
     description: Tree-based methods, ensemble learning, and feature importance.
     # materials:
@@ -53,7 +53,7 @@ schedule:
     #     url: /assets/pdf/example_pdf.pdf
 
   - week: 5
-    date: Oct 3
+    #date: Oct 3
     topic: Thermodynamics of Mixtures and Mixing
     description: Margin maximization, kernel methods, and support vectors.
     # materials:
@@ -63,7 +63,7 @@ schedule:
     #     url: /assets/pdf/example_pdf.pdf
 
   - week: 6
-    date: Oct 10
+    #date: Oct 10
     topic: Chemical Reaction Equilibrium
     description: Covers weeks 1-5.
 
@@ -79,15 +79,21 @@ schedule:
 
 
 ---
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  #removes the 2nd column
 
 ## Course Overview
 
 This introductory course on machine learning covers fundamental concepts and algorithms in the field. By the end of this course, students will be able to:
 
-- Understand key machine learning paradigms and concepts
-- Implement basic machine learning algorithms
-- Evaluate and compare model performance
-- Apply machine learning techniques to real-world problems
+- Understand the definitions and physical meanings of various thermodynamic properties for both pure fluids and mixtures
+- Understand the mathematical framework connecting different thermodynamic properties
+- Understand the concepts of and assumptions behind idealized model systems such as ideal gas and ideal solution
+- Understand the departure of real fluids, including mixtures, from idealized models and be able to select and utilize appropriate models to describe real fluids, including models for their PVT behaviors and activity coefficients
+- Understand the concept of thermodynamic equilibrium and the criteria for its identification from thermodynamic properties
+- Be able to select the appropriate model to analyze a given vapor-liquid equilibrium (VLE) system and understand its connections with the general equilibrium criteria
+- Understand the miscibility and phase separation of multiple liquids and be able to analyze the heat effects and equilibrium composition of their mixing
+- Be able to solve thermodynamic equilibrium analysis problems, using analytical and/or numerical approaches as appropriate
+- Be able to apply thermodynamic property relations to calculate thermodynamic properties of fluids and materials from experimentally measurable quantities, using analytical and/or numerical approaches as appropriate
 
 <!-- ## Prerequisites
 
