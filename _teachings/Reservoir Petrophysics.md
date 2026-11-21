@@ -91,8 +91,8 @@ This course provides a comprehensive introduction to data science principles and
 - "Python for Data Analysis" by Wes McKinney
 - "Data Science from Scratch" by Joel Grus
 
-## Grading
+<!-- ## Grading
 
 - Assignments: 50%
 - Project: 40%
-- Participation: 10%
+- Participation: 10% -->

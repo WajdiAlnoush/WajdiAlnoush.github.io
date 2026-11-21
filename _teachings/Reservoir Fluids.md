@@ -125,15 +125,22 @@ schedule:
     #   - name: Coding Lab
     #     url: https://github.com/
 ---
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  
+<style>table th:nth-child(4),table td:nth-child(4) {display: none;}</style> 
 
 ## Course Overview
 
 This introductory course on machine learning covers fundamental concepts and algorithms in the field. By the end of this course, students will be able to:
 
-- Understand key machine learning paradigms and concepts
-- Implement basic machine learning algorithms
-- Evaluate and compare model performance
-- Apply machine learning techniques to real-world problems
+- Describe how physical properties of hydrocarbon components are affected by molecular structure, size, pressure, and temperature
+- Explain the physical meaning and evaluate the impact of fluid properties in reservoir engineering and production problems
+- Compute formation volume factors, viscosities, solution gas-oil ratio, densities of oil, water and gas, z-factor (single and two-phase), and interfacial tensions
+- Calculate the densities of different fluids at ambient conditions, by conducting laboratory experiments
+- Calculate gas, oil, and oilfield brine properties (z-factor, density, viscosities) using various correlations with different independent variables
+- Calculate the specific gravity of a wet gas mixture by recombination using production data
+- Determine and analyze values of oil and gas formation volume factors, saturation pressures, compressibilities, and solution gas oil ratios, given raw PVT data from a reservoir fluid study
+- Determine and analyze the dependence of oil viscosity with temperature and oil gravity, by conducting laboratory experiments
+- Calculate phase boundaries (bubble point or dew points), and two-phase phase equilibrium separations given overall mixture composition, pressure (or temperature), and equilibrium ratios
 
 ## Prerequisites
 

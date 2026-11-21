@@ -5,7 +5,7 @@ university: Teach for Qatar Fellowship (K-12)
 description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
 # instructor: Prof. Data
 year: 2016/2017/2018
-term: ""
+# term: ""
 # location: Science Building, Room 202
 # time: Mondays and Wednesdays, 2:00-3:30 PM
 course_id: data-science-fundamentals
@@ -80,19 +80,19 @@ This course provides a comprehensive introduction to data science principles and
 - Develop skills in data visualization and communication
 - Apply statistical methods to derive insights from data
 
-## Prerequisites
+<!-- ## Prerequisites
 
 - Basic programming knowledge (preferably in Python)
 - Introductory statistics
-- Comfort with basic algebra
+- Comfort with basic algebra -->
 
 ## Textbooks
 
 - "Python for Data Analysis" by Wes McKinney
 - "Data Science from Scratch" by Joel Grus
 
-## Grading
+<!-- ## Grading
 
 - Assignments: 50%
 - Project: 40%
-- Participation: 10%
+- Participation: 10% -->
