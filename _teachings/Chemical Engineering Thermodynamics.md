@@ -79,7 +79,7 @@ schedule:
 
 
 ---
-<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  #removes the 2nd column
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  #removes the 2nd column from schedule table
 
 ## Course Overview
 
