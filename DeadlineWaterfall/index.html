@@ -5,40 +5,49 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=e272beb2a356f3d9abedbe97e457f5c2"> <link rel="canonical" href="https://wajdialnoush.github.io/DeadlineWaterfall/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Wajdi</span> Alnoush </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/whatibuild/">What I Build </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/connect/">Connect </a> </li> <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">(current)</span> </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/ProgressTrack/">👤</a> <a class="dropdown-item " href="/DeadlineWaterfall/">🏴󠁫󠁩󠁬󠁿</a> </div> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"></h1> <p class="post-description"></p> </header> <article> <style>
-#dw{overflow-x:auto;margin-top:1rem;padding-bottom:1rem;--dw-line:var(--global-divider-color,rgba(128,128,128,.25));--dw-muted:var(--global-text-color-light,#888)}
-#dw *{box-sizing:border-box}
-.dw-inner{position:relative}
-.dw-header{display:flex;padding-left:64px}
-.dw-cat{padding:0 8px}
-.dw-catbody{display:flex;height:100%}
-.dw-catname{text-align:center;font-weight:700;padding-bottom:4px}
-.dw-bracket{height:12px;border:2px solid var(--c);border-bottom:0;border-radius:14px 14px 0 0}
-.dw-body{position:relative}
-.dw-row{height:28px;border-bottom:1px solid var(--dw-line)}
-.dw-row.dw-weekend{background:rgba(128,128,128,.06)}
-.dw-row.dw-month{border-top:1px solid var(--dw-muted)}
-.dw-row.dw-pastrow{opacity:.45}
-.dw-row.dw-todayrow{background:rgba(255,82,82,.10);border-bottom-color:transparent}
-.dw-num{display:block;width:56px;text-align:right;line-height:27px;font-size:12px;color:var(--dw-muted)}
-.dw-month .dw-num{font-weight:700;color:var(--global-text-color,inherit)}
-.dw-todayrow .dw-num{color:#ff5252;font-weight:700}
-.dw-cats{position:absolute;left:64px;right:0;top:0;bottom:0;display:flex;z-index:1}
-.dw-col{flex:1 1 0;position:relative;min-width:44px}
-.dw-seg{position:absolute;left:50%;width:2px;margin-left:-1px;background:var(--c)}
-.dw-arrow{position:absolute;left:50%;margin-left:-6px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid var(--c)}
-.dw-date{position:absolute;left:50%;transform:translateX(-50%);font-size:11px;font-weight:600;white-space:nowrap;color:var(--c)}
-.dw-label{position:absolute;left:50%;writing-mode:vertical-rl;transform:translateX(-50%) rotate(180deg);white-space:nowrap;font-size:12px;font-weight:600;padding:6px 1px;background:var(--global-bg-color,#fff);color:var(--global-text-color,inherit);text-decoration:none;z-index:2}
-.dw-dim{opacity:.28}
-.dw-label.dw-dim{opacity:1;color:var(--dw-muted)}
-.dw-today{position:absolute;left:0;right:0;height:2px;background:#ff5252;box-shadow:0 0 6px 1px rgba(255,82,82,.9),0 0 18px 4px rgba(255,82,82,.45);z-index:3;pointer-events:none}
-</style> <div id="dw"></div> <script>
-(function () {
+  .password-gate {text-align: center; padding: 4rem 1rem; max-width: 400px; margin: 0 auto;}
+  .password-gate input {padding: 0.6rem 0.8rem; border-radius: 8px; border: 0.4px solid #6b7280; background: transparent; color: inherit; font-family: inherit; font-size: 0.95rem; margin-right: 0.5rem; margin-top: 1rem;}
+  .password-gate button {padding: 0.6rem 1.2rem; border-radius: 8px; border: none; background-color: var(--global-theme-color, #4fc3f7); color: #000; font-weight: 700; cursor: pointer;}
+  .password-gate p.error {color: #e76f51; font-size: 0.85rem; margin-top: 0.6rem; display: none;}
+  #dw{overflow-x:auto;margin-top:1rem;padding-bottom:1rem;--dw-line:var(--global-divider-color,rgba(128,128,128,.25));--dw-muted:var(--global-text-color-light,#888)}
+  #dw *{box-sizing:border-box}
+  .dw-inner{position:relative}
+  .dw-header{display:flex;padding-left:64px}
+  .dw-cat{padding:0 8px}
+  .dw-catbody{display:flex;height:100%}
+  .dw-catname{text-align:center;font-weight:700;padding-bottom:4px}
+  .dw-bracket{height:12px;border:2px solid var(--c);border-bottom:0;border-radius:14px 14px 0 0}
+  .dw-body{position:relative}
+  .dw-row{height:28px;border-bottom:1px solid var(--dw-line)}
+  .dw-row.dw-weekend{background:rgba(128,128,128,.06)}
+  .dw-row.dw-month{border-top:1px solid var(--dw-muted)}
+  .dw-row.dw-pastrow{opacity:.45}
+  .dw-row.dw-todayrow{background:rgba(255,82,82,.10);border-bottom-color:transparent}
+  .dw-num{display:block;width:56px;text-align:right;line-height:27px;font-size:12px;color:var(--dw-muted)}
+  .dw-month .dw-num{font-weight:700;color:var(--global-text-color,inherit)}
+  .dw-todayrow .dw-num{color:#ff5252;font-weight:700}
+  .dw-cats{position:absolute;left:64px;right:0;top:0;bottom:0;display:flex;z-index:1}
+  .dw-col{flex:1 1 0;position:relative;min-width:44px}
+  .dw-seg{position:absolute;left:50%;width:2px;margin-left:-1px;background:var(--c)}
+  .dw-arrow{position:absolute;left:50%;margin-left:-6px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid var(--c)}
+  .dw-date{position:absolute;left:50%;transform:translateX(-50%);font-size:11px;font-weight:600;white-space:nowrap;color:var(--c)}
+  .dw-label{position:absolute;left:50%;writing-mode:vertical-rl;transform:translateX(-50%) rotate(180deg);white-space:nowrap;font-size:12px;font-weight:600;padding:6px 1px;background:var(--global-bg-color,#fff);color:var(--global-text-color,inherit);text-decoration:none;z-index:2}
+  .dw-dim{opacity:.28}
+  .dw-label.dw-dim{opacity:1;color:var(--dw-muted)}
+  .dw-today{position:absolute;left:0;right:0;height:2px;background:#ff5252;box-shadow:0 0 6px 1px rgba(255,82,82,.9),0 0 18px 4px rgba(255,82,82,.45);z-index:3;pointer-events:none}
+</style> <div id="password-gate" class="password-gate"> <p>Enter password to view 👀</p> <div> <input type="password" id="page-password" placeholder="Enter password"> <button onclick="checkPassword()">Unlock</button> </div> <p class="error" id="wrong-password-msg">Wrong password, try again!</p> </div> <div id="dw" style="display: none;"></div> <script>
+var dwBuilt = false;
+
+function buildWaterfall() {
+  if (dwBuilt) return;
+  dwBuilt = true;
   var DATA = {"past_days":7,"tail_days":5,"categories":[{"name":"Fellowships","color":"#29b6f6","items":[{"name":"Fellowship 1","date":"2026-12-05"},{"name":"Fellowship 2","date":"2026-12-18"},{"name":"Fellowship 3","date":"2027-01-12"}]},{"name":"Conference abstracts","color":"#ffa726","items":[{"name":"Abstract 1","date":"2026-12-01"},{"name":"Abstract 2","date":"2027-01-20"}]},{"name":"Paper submissions","color":"#66bb6a","items":[{"name":"Paper 1","date":"2026-12-10","url":"https://example.com"},{"name":"Paper 2","date":"2027-02-01"}]},{"name":"Response to reviewers","color":"#ab47bc","items":[{"name":"Reviews 1","date":"2026-11-30"},{"name":"Reviews 2","date":"2027-01-05"}]}]};
   var ROW = 28, GUT = 64, COLW = 44, DAY = 86400000;
   var PALETTE = ['#29b6f6', '#ffa726', '#66bb6a', '#ab47bc', '#ec407a', '#8d6e63'];
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var root = document.getElementById('dw');
-  if (!root || !DATA || !DATA.categories) return;
+  if (!root) return;
+  if (!DATA || !DATA.categories) { root.textContent = 'No data found. Check that _data/deadlines.yml exists and has a "categories:" list.'; return; }
   var PAST = DATA.past_days != null ? +DATA.past_days : 7;
   var TAIL = DATA.tail_days != null ? +DATA.tail_days : 5;
   var now = new Date();
@@ -152,7 +161,32 @@
   root.appendChild(inner);
   placeLabels();
   window.addEventListener('load', placeLabels);
-})();
+}
+
+function unlock() {
+  document.getElementById('password-gate').style.display = 'none';
+  document.getElementById('dw').style.display = 'block';
+  buildWaterfall();
+}
+
+function checkPassword() {
+  var input = document.getElementById('page-password').value;
+  var errorMsg = document.getElementById('wrong-password-msg');
+  if (input === "OHNO!") {
+    sessionStorage.setItem('waterfallUnlocked', 'true');
+    unlock();
+  } else {
+    errorMsg.style.display = 'block';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (sessionStorage.getItem('waterfallUnlocked') === 'true') unlock();
+});
+
+document.getElementById('page-password').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') checkPassword();
+});
 </script> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Wajdi Alnoush. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub</a> | <a href="/connect/">Contact me</a> </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
