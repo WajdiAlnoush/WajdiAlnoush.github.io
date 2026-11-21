@@ -13,7 +13,12 @@ schedule:
   - module: 1
     date: Sept 5
     topic: Linear Systems of Equations
-    description: Overview of machine learning, course structure, and expectations.
+    description: 
+        <ul>
+          <li>Overview of course structure</li>
+          <li>Linear system modeling</li>
+          <li>Expansion to discretized systems</li>
+        </ul>
     materials:
       - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
@@ -23,7 +28,14 @@ schedule:
   - module: 2
     date: Sept 12
     topic: Linear System Solutions - Elimination Methods
-    description: Introduction to linear regression, gradient descent, and model evaluation.
+    description: 
+        <ul>
+          <li>Gauss elimination</li>
+          <li>Gauss-Jordan elimination</li>
+          <li>LU decomposition</li>
+          <li>Trade-Offs and applications</li>
+          <li>Pivoting</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -33,7 +45,13 @@ schedule:
   - module: 3
     date: Sept 19
     topic: Linear System Solutions - Iterative Methods
-    description: Logistic regression, decision boundaries, and multi-class classification.
+    description: 
+        <ul>
+          <li>Jacobi method</li>
+          <li>Gauss-Seidel method</li>
+          <li>Diagonal dominance</li>
+          <li>Smoothing</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -43,7 +61,13 @@ schedule:
   - module: 4
     date: Sept 26
     topic: Nonlinear Systems - Formulation and Bracketing
-    description: Tree-based methods, ensemble learning, and feature importance.
+    description: 
+        <ul>
+          <li>Formulating nonlinear problems</li>
+          <li>Bisection for univariate solutions</li>
+          <li>Regula-Falsi for univariate equations</li>
+          <li>Rates of convergence</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -53,7 +77,13 @@ schedule:
   - module: 5
     date: Oct 3
     topic: Nonlinear Systems - Open Methods and Multivariate Solutions
-    description: Margin maximization, kernel methods, and support vectors.
+    description: 
+        <ul>
+          <li>Secant method</li>
+          <li>Review of Taylor Series expansion</li>
+          <li>Newton-Raphson method</li>
+          <li>Multivariate Newton-Raphson method</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -63,12 +93,22 @@ schedule:
   - module: 6
     date: Oct 10
     topic: Curve Fitting - Regression
-    description: Covers weeks 1-5.
-
+    description: 
+        <ul>
+          <li>Concept of regression and optimization</li>
+          <li>Linear regression</li>
+          <li>Polynomial regression</li>
+          <li>Basis function regression</li>
+        </ul>
   - module: 7
     date: Oct 17
     topic: Curve Fitting - Interpolation
-    description: Perceptrons, multilayer networks, and backpropagation.
+    description: 
+        <ul>
+          <li>Lagrange polynomials</li>
+          <li>Splines</li>
+          <li>Data scaling and normalization</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -78,13 +118,52 @@ schedule:
   - module: 8
     date: Oct 24
     topic: Numerical Differentiation
-    description: Convolutional neural networks, recurrent neural networks, and applications.
+    description: 
+        <ul>
+          <li>Finite differences</li>
+          <li>Partial derivatives</li>
+          <li>Derivatives via curve fitting</li>
+          <li>Error analysis</li>
+        </ul>
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - module: 9
+    date: Oct 24
+    topic: Numerical Integration
+    description: 
+        <ul>
+          <li>Newton-Cotes formulas and error analysis</li>
+          <li>Richardson extrapolation</li>
+          <li>Romberg integration</li>
+          <li>Multiple integrals</li>
+        </ul>
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - module: 10
+    date: Oct 24
+    topic: Univariate and Multivariate Differential Equations
+    description: 
+        <ul>
+          <li>Defining ODEs</li>
+          <li>Methods of solving ODEs</li>
+          <li>Multivariate Euler’s, and RK4 methods</li>
+        </ul>
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
       - name: Coding Lab
         url: https://github.com/
 ---
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  
+<style>table th:nth-child(4),table td:nth-child(4) {display: none;}</style> 
 
 ## Learning Objectives
 

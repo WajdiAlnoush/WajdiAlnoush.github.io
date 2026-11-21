@@ -28,8 +28,24 @@ calendar: true
   .teaching-readmore.static {position: static; display: inline-block; margin-top: 0.3rem; background: none; padding-left: 0;}
 </style>
 
+
 {% assign courses_by_university = site.teachings | group_by: "university" %}
-{% for group in courses_by_university %}
+
+{% assign keys = "" | split: "" %}
+{% for g in courses_by_university %}
+  {% assign max_year = 0 %}
+  {% for item in g.items %}
+    {% assign y = item.year | append: "" | replace: "/", "-" | split: "-" | last | plus: 0 %}
+    {% if y > max_year %}{% assign max_year = y %}{% endif %}
+  {% endfor %}
+  {% capture entry %}{{ max_year }}|{{ forloop.index0 }}{% endcapture %}
+  {% assign keys = keys | push: entry %}
+{% endfor %}
+{% assign sorted_keys = keys | sort | reverse %}
+
+{% for key in sorted_keys %}
+  {% assign idx = key | split: "|" | last | plus: 0 %}
+  {% assign group = courses_by_university[idx] %}
   <div class="teaching-group">
     <div class="teaching-university">{{ group.name }}</div>
     {% assign certificates = group.items | where: "teaching_type", "certificate" %}

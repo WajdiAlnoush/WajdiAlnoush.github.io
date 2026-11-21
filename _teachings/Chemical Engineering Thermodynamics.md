@@ -23,9 +23,12 @@ schedule:
   - week: 2
     #date: Sept 12
     topic: Thermodynamic Properties and Relations
-    description: "- PVT behaviors and equation of state
-                  – Free energy and property relations
-                  – Residual properties"
+    description: |
+        <ul>
+          <li>PVT behaviors and equation of state</li>
+          <li>Free energy and property relations</li>
+          <li>Residual properties</li>
+        </ul>
     # materials:
     #   - name: Lecture Notes
     #     url: /assets/pdf/example_pdf.pdf
@@ -35,7 +38,12 @@ schedule:
   - week: 3
     #date: Sept 19
     topic: Vapor-Liquid Equilibrium (VLE)
-    description: Logistic regression, decision boundaries, and multi-class classification.
+    description: 
+        <ul>
+          <li>Equilibrium criteria and one-component VLE</li>
+          <li>Raoult’s law and multicomponent VLE calculations</li>
+          <li>VLE of general mixtures - Pxy behaviors and models</li>
+        </ul>
     # materials:
     #   - name: Lecture Notes
     #     url: /assets/pdf/example_pdf.pdf
@@ -45,7 +53,14 @@ schedule:
   - week: 4
     #date: Sept 26
     topic: Solution Theory – Thermodynamic Properties of Mixtures
-    description: Tree-based methods, ensemble learning, and feature importance.
+    description: 
+        <ul>
+          <li>Partial properties and chemical potential</li>
+          <li>Ideal-gas mixture</li>
+          <li>Fugacity</li>
+          <li>Ideal Solution</li>
+          <li>Non-ideal solutions - activity and excess properties</li>
+        </ul>
     # materials:
     #   - name: Lecture Notes
     #     url: /assets/pdf/example_pdf.pdf
@@ -55,7 +70,12 @@ schedule:
   - week: 5
     #date: Oct 3
     topic: Thermodynamics of Mixtures and Mixing
-    description: Margin maximization, kernel methods, and support vectors.
+    description: 
+        <ul>
+          <li>Multicomponent VLE and models for the activity coefficient</li>
+          <li>Mixing - property changes and heat effects</li>
+          <li>Phase separation and equilibria</li>
+        </ul>
     # materials:
     #   - name: Lecture Notes
     #     url: /assets/pdf/example_pdf.pdf
@@ -65,7 +85,13 @@ schedule:
   - week: 6
     #date: Oct 10
     topic: Chemical Reaction Equilibrium
-    description: Covers weeks 1-5.
+    description: 
+        <ul>
+          <li>Introduction - stoichiometry and equilibrium criterion</li>
+          <li>Evaluation of the equilibrium constant</li>
+          <li>Single- and Multi-reaction equilibrium in homogeneous systems</li>
+          <li>Reaction equilibrium in heterogeneous systems</li>
+        </ul>
 
   # - week: 7
   #   date: Oct 17
@@ -79,9 +105,10 @@ schedule:
 
 
 ---
-<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  #removes the 2nd column from schedule table
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  
+<style>table th:nth-child(4),table td:nth-child(4) {display: none;}</style>  
 
-## Course Overview
+## Course Outcomes
 
 This introductory course on machine learning covers fundamental concepts and algorithms in the field. By the end of this course, students will be able to:
 
