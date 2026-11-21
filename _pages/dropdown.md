@@ -12,4 +12,6 @@ children:
   #   permalink: /blog/
   - title: 👤
     permalink: /ProgressTrack/
+  - title: 🏴󠁫󠁩󠁬󠁿
+    permalink: /DeadlineWaterfall/
 ---

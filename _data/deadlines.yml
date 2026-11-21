@@ -1,0 +1,38 @@
+past_days: 7   # days shown above "today"
+tail_days: 5   # extra days shown after the last deadline
+
+categories:
+  - name: Fellowships
+    color: "#29b6f6"
+    items:
+      - name: Fellowship 1
+        date: "2026-12-05"
+      - name: Fellowship 2
+        date: "2026-12-18"
+      - name: Fellowship 3
+        date: "2027-01-12"
+
+  - name: Conference abstracts
+    color: "#ffa726"
+    items:
+      - name: Abstract 1
+        date: "2026-12-01"
+      - name: Abstract 2
+        date: "2027-01-20"
+
+  - name: Paper submissions
+    color: "#66bb6a"
+    items:
+      - name: Paper 1
+        date: "2026-12-10"
+        url: "https://example.com"   # optional: makes the label a link
+      - name: Paper 2
+        date: "2027-02-01"
+
+  - name: Response to reviewers
+    color: "#ab47bc"
+    items:
+      - name: Reviews 1
+        date: "2026-11-30"
+      - name: Reviews 2
+        date: "2027-01-05"
