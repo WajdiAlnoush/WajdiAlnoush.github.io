@@ -13,8 +13,19 @@ course_id: data-science-fundamentals
 schedule:
   - week: 1
     date: Feb 5
-    topic: Introduction to Data Science
-    description: Overview of the data science workflow and key concepts.
+    topic: EDUCATN 600 - Essential Skills in Teaching and Learning I
+    description: 
+        <ul>
+          <li>Educational Technologies I</li>
+          <li>Adult Learning Theories</li>
+          <li>Accessible Teaching Techniques</li>
+          <li>Active Learning</li>
+          <li>Marking Efficiently and Effectively</li>
+          <li>Research in Teaching and Learning I</li>
+          <li>PowerPoint Design for Learning</li>
+          <li>Teaching Philosophy Statement</li>
+        </ul>
+    
     materials:
       - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
@@ -23,8 +34,17 @@ schedule:
 
   - week: 2
     date: Feb 12
-    topic: Data Collection and APIs
-    description: Methods for collecting data through APIs, web scraping, and databases.
+    topic: EDUCATN 650 - Peer-Evaluated Teaching
+    description: 
+        <ul>
+          <li>Instructioanl Skills</li>
+          <li>Principles of Multimedia</li>
+          <li>Lesson Cycle 1 (Delivered Lesson, Self-Reflection, and Peer Feedback)</li>
+          <li>Lesson Cycle 2 (Delivered Lesson, Self-Reflection, and Peer Feedback)</li>
+          <li>Lesson Cycle 3 (Delivered Lesson, Self-Reflection, and Peer Feedback)</li>
+
+        </ul>
+    
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -33,8 +53,17 @@ schedule:
 
   - week: 3
     date: Feb 19
-    topic: Data Cleaning and Preprocessing
-    description: Techniques for handling missing values, outliers, and data transformation.
+    topic: EDUCATN 700 - Essential Skills in University Teaching II
+    description: 
+        <ul>
+          <li>Supervising and Mentoring Students</li>
+          <li>Seven Research-Based Principles for Smart Teaching</li>
+          <li>Collecting Feedback on Your Teaching</li>
+          <li>Resaerch on Teaching and Learning II</li>
+          <li>Educational Technologies II</li>
+          <li>Motivating and Engaging Students Online</li>
+        </ul>
+    
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -43,8 +72,18 @@ schedule:
 
   - week: 4
     date: Feb 26
-    topic: Exploratory Data Analysis
-    description: Descriptive statistics, visualization, and pattern discovery.
+    topic: EDUCATN 750 - Principles and Practices of University Teaching
+    description: 
+        <ul>
+          <li>Lesson Planning, Backwards Design, and ILOs</li>
+          <li>Active Learning</li>
+          <li>Universal Design, Accesssibility, and Accomodation</li>
+          <li>Mental Health in the Classroom</li>
+          <li>Designing a Course Syllabus</li>
+          <li>Collecting, Using, and Interpreting Feedback on Teaching</li>
+          <li>Teaching Philosophy Statement</li>
+        </ul>
+    
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -53,35 +92,33 @@ schedule:
 
   - week: 5
     date: Mar 4
-    topic: Statistical Analysis
-    description: Hypothesis testing, confidence intervals, and statistical inference.
+    topic: EDUCATN 760 - Self Directed Study
+    description: 
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
       - name: Review Materials
         url: /assets/pdf/example_pdf.pdf
 
-  - week: 6
-    date: Mar 11
-    topic: Data Visualization
-    description: Principles and tools for effective data visualization.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
-        url: /assets/pdf/example_pdf.pdf
 ---
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  
+<style>table th:nth-child(4),table td:nth-child(4) {display: none;}</style>  
 
-## Course Overview
+## Certificate Outcomes
 
 This course provides a comprehensive introduction to data science principles and practices. Students will:
 
+- Reflect on key foundational topics of relevance to post-secondary education
+- Discuss key foundational topics of relevance to post-secondary education
+- Facilitate and engage in discussion on theory and good practices in teaching and learning 
+- Develop course design components, including intended learning outcomes, a course syllabus, and a sample assessment and corresponding evaluation framework 
+- Create projects on a post-secondary teaching and learning that indicate understanding of:
+  o scholarship on teaching and learning 
+  o research design 
+  o principles of constructive alignment and universal design 
+  o appropriate application of educational technologies 
+- Construct a workable teaching portfolio by incorporating course content and instructor feedback
 
-- EDUCATN 600 - Essential Skills in Teaching and Learning I
-- EDUCATN 650 - Peer-Evaluated Teaching
-- EDUCATN 700 - Essential Skills in University Teaching II
-- EDUCATN 750 - Principles and Practices of University Teaching 
-- EDUCATN 760 - Self Directed Study
 
 <!-- ## Prerequisites
 
