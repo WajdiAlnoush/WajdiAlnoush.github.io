@@ -2,7 +2,7 @@
 layout: course
 title: Algebra
 university: Teach for Qatar Fellowship (K-12)
-description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
+description: A two-year teaching and leadership fellowship with Teach For Qatar (part of Teach For All network), teaching grade 8 mathematics in a public Ministry of Education school while leading student STEM research and completing professional development with Teach For All and HEC Paris.
 # instructor: Prof. Data
 year: 2016/2017/2018
 # term: ""
@@ -11,74 +11,177 @@ year: 2016/2017/2018
 course_id: data-science-fundamentals
 schedule:
   - week: 1
-    date: Feb 5
-    topic: Introduction to Data Science
-    description: Overview of the data science workflow and key concepts.
+    #date: Sept 12
+    topic: Connect with a child – to Understanding the emotional needs of a child
+    description: ""
     materials:
       - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
-      - name: Slides
-        url: /assets/pdf/example_pdf.pdf
 
   - week: 2
-    date: Feb 12
-    topic: Data Collection and APIs
-    description: Methods for collecting data through APIs, web scraping, and databases.
+    #date: Sept 12
+    topic: Child's developmental stages
+    description: ""
     materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 1
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
 
   - week: 3
-    date: Feb 19
-    topic: Data Cleaning and Preprocessing
-    description: Techniques for handling missing values, outliers, and data transformation.
+    #date: Sept 12
+    topic: The leadership journey
+    description: ""
     materials:
-      - name: Lecture Notes
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
 
   - week: 4
-    date: Feb 26
-    topic: Exploratory Data Analysis
-    description: Descriptive statistics, visualization, and pattern discovery.
+    #date: Sept 12
+    topic: Theory of problem and Theory of change
+    description: ""
     materials:
-      - name: Lecture Notes
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 2
-        url: /assets/pdf/example_pdf.pdf
-
+  
   - week: 5
-    date: Mar 4
-    topic: Statistical Analysis
-    description: Hypothesis testing, confidence intervals, and statistical inference.
+    #date: Sept 12
+    topic: Setting and monitoring personal goals and personal vision
+    description: ""
     materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Review Materials
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
 
   - week: 6
-    date: Mar 11
-    topic: Data Visualization
-    description: Principles and tools for effective data visualization.
+    #date: Sept 12
+    topic: Disciplining in the classroom – Class room management
+    description: ""
     materials:
-      - name: Lecture Notes
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
+
+  - week: 7
+    #date: Sept 12
+    topic: Communicating to motivate children
+    description: ""
+    materials:
+      - name: Syllabus
         url: /assets/pdf/example_pdf.pdf
+
+  - week: 8
+    #date: Sept 12
+    topic: Bloom's taxonomy
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+  
+  - week: 9
+    #date: Sept 12
+    topic: Understanding Learning styles
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 10
+    #date: Sept 12
+    topic: Methodologies to make teaching interactive, involving and more meaningful
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 11
+    #date: Sept 12
+    topic: Leadership styles
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 12
+    #date: Sept 12
+    topic: Learning Brain’s strength and weakness of the learner
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+  
+  - week: 13
+    #date: Sept 12
+    topic: Rationale of the decision-making model
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+  
+  - week: 14
+    #date: Sept 12
+    topic: The top management team - key to strategic success
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 15
+    #date: Sept 12
+    topic: Leadership circle profile
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 16
+    #date: Sept 12
+    topic: Leader personal characteristic
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  - week: 17
+    #date: Sept 12
+    topic: Being a leader authority and influence
+    description: ""
+    materials:
+      - name: Syllabus
+        url: /assets/pdf/example_pdf.pdf
+
+  # - week: 3
+  #   date: Feb 19
+  #   topic: Data Cleaning and Preprocessing
+  #   description: Techniques for handling missing values, outliers, and data transformation.
+  #   materials:
+  #     - name: Lecture Notes
+  #       url: /assets/pdf/example_pdf.pdf
+  #     - name: Coding Lab
+  #       url: https://github.com/
+
 ---
+<style>table th:nth-child(2),table td:nth-child(2) {display: none;}</style>  
+<style>table th:nth-child(4),table td:nth-child(4) {display: none;}</style>
 
-## Course Overview
+## Role and Responsibilites:
 
-This course provides a comprehensive introduction to data science principles and practices. Students will:
+Recuring activities and duties I pursued during this 2-year fellowship include:
 
-- Learn the end-to-end data science workflow
-- Gain practical experience with data manipulation tools
-- Develop skills in data visualization and communication
-- Apply statistical methods to derive insights from data
+- Preparing and delivering lesson plans, class materials, and presentations according to the Ministry of Educatiton curriculum
+- Preparing, administering, and marking tests and quizzzes
+- Conducting educational research, Assessing student progress, and monitoring learning outcomes in collaboration with Teach For All
+- Supervising student STEM research projects on alternative fuels and environmental monitoring, including the use of GTL diesel as an alternative fuel for school buses and drones for environmental monitoring
+- Completing monthly professiional development days and workships under the Ministry of Education, Teach for All, and HEC Paris
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('h1, h2, h3, h4').forEach(function (h) {
+    if (h.textContent.trim() === 'Schedule') h.textContent = 'Professional Development Workshops';
+  });
+  document.querySelectorAll('table th').forEach(function (th) {
+    var t = th.textContent.trim();
+    if (t === 'Week') th.textContent = 'Workshop';
+  });
+});
+</script>
 
 <!-- ## Prerequisites
 
@@ -86,10 +189,10 @@ This course provides a comprehensive introduction to data science principles and
 - Introductory statistics
 - Comfort with basic algebra -->
 
-## Textbooks
+<!-- ## Textbooks
 
 - "Python for Data Analysis" by Wes McKinney
-- "Data Science from Scratch" by Joel Grus
+- "Data Science from Scratch" by Joel Grus -->
 
 <!-- ## Grading
 
