@@ -2,25 +2,39 @@ past_days: 7   # days shown above "today"
 tail_days: 5   # extra days shown after the last deadline
 
 categories:
-  - name: Fellowships
+  - name: Fellowship/Awards
     color: "#29b6f6"
     items:
-      - name: Fellowship 1
-        date: "2026-12-05"
-      - name: Fellowship 2
-        date: "2026-12-18"
-      - name: Fellowship 3
-        date: "2027-01-12"
+      - name: JSPS Japan
+        date: "2027-02-01"
+      - name: ND Provost's PDF in Eng.
+        date: "2026-12-15"
+      - name: Harvard Environmental Fellows
+        date: "2026-12-01"
+      - name: RAMI Rice
+        date: "2026-12-11"
 
-  - name: Conference abstracts
+  - name: Admin
     color: "#ffa726"
     items:
-      - name: Abstract 1
+      - name: Award 1
         date: "2026-12-01"
-      - name: Abstract 2
+      - name: Award 2
         date: "2027-01-20"
 
-  - name: Paper submissions
+  - name: Confs
+    color: "#ec407a"
+    items:
+      - name: Con 1
+        date: "2026-11-30"
+      - name: Con 2
+        date: "2027-01-05"
+      - name: Con 3
+        date: "2027-01-05"
+      - name: Con 4
+        date: "2027-01-05"
+
+  - name: Submissions
     color: "#66bb6a"
     items:
       - name: Paper 1
@@ -29,10 +43,11 @@ categories:
       - name: Paper 2
         date: "2027-02-01"
 
-  - name: Response to reviewers
+  - name: R-to-R
     color: "#ab47bc"
     items:
       - name: Reviews 1
         date: "2026-11-30"
       - name: Reviews 2
         date: "2027-01-05"
+
