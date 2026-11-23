@@ -27,22 +27,22 @@
   .dw-month .dw-num{font-weight:700;color:var(--global-text-color,inherit)}
   .dw-todayrow .dw-num{color:#ff5252;font-weight:700}
   .dw-cats{position:absolute;left:64px;right:0;top:0;bottom:0;display:flex;z-index:1}
-  .dw-col{flex:1 1 0;position:relative;min-width:44px}
-  .dw-seg{position:absolute;left:50%;width:2px;margin-left:-1px;background:var(--c)}
-  .dw-arrow{position:absolute;left:50%;margin-left:-6px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid var(--c)}
+  .dw-col{flex:1 1 0;position:relative;min-width:25px}
+  .dw-seg{position:absolute;left:50%;width:2.6px;margin-left:-1.3px;background:var(--c)}
+  .dw-arrow{position:absolute;left:50%;margin-left:-7px;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:13px solid var(--c)}
   .dw-date{position:absolute;left:50%;transform:translateX(-50%);font-size:11px;font-weight:600;white-space:nowrap;color:var(--c)}
   .dw-label{position:absolute;left:50%;writing-mode:vertical-rl;transform:translateX(-50%) rotate(180deg);white-space:nowrap;font-size:12px;font-weight:600;padding:6px 1px;background:var(--global-bg-color,#fff);color:var(--global-text-color,inherit);text-decoration:none;z-index:2}
   .dw-dim{opacity:.28}
   .dw-label.dw-dim{opacity:1;color:var(--dw-muted)}
-  .dw-today{position:absolute;left:0;right:0;height:2px;background:#ff5252;box-shadow:0 0 6px 1px rgba(255,82,82,.9),0 0 18px 4px rgba(255,82,82,.45);z-index:3;pointer-events:none}
+  .dw-today{position:absolute;left:0;right:0;height:2px;background:#ff5252;box-shadow:0 0 4px 1px rgba(255,82,82,.7),0 0 10px 2px rgba(255,82,82,.3);z-index:3;pointer-events:none}
 </style> <div id="password-gate" class="password-gate"> <p>Enter password to view 👀</p> <div> <input type="password" id="page-password" placeholder="Enter password"> <button onclick="checkPassword()">Unlock</button> </div> <p class="error" id="wrong-password-msg">Wrong password, try again!</p> </div> <div id="dw" style="display: none;"></div> <script>
 var dwBuilt = false;
 
 function buildWaterfall() {
   if (dwBuilt) return;
   dwBuilt = true;
-  var DATA = {"past_days":7,"tail_days":5,"categories":[{"name":"Fellowships","color":"#29b6f6","items":[{"name":"Fellowship 1","date":"2026-12-05"},{"name":"Fellowship 2","date":"2026-12-18"},{"name":"Fellowship 3","date":"2027-01-12"}]},{"name":"Conference abstracts","color":"#ffa726","items":[{"name":"Abstract 1","date":"2026-12-01"},{"name":"Abstract 2","date":"2027-01-20"}]},{"name":"Paper submissions","color":"#66bb6a","items":[{"name":"Paper 1","date":"2026-12-10","url":"https://example.com"},{"name":"Paper 2","date":"2027-02-01"}]},{"name":"Response to reviewers","color":"#ab47bc","items":[{"name":"Reviews 1","date":"2026-11-30"},{"name":"Reviews 2","date":"2027-01-05"}]}]};
-  var ROW = 28, GUT = 64, COLW = 44, DAY = 86400000;
+  var DATA = {"past_days":7,"tail_days":5,"categories":[{"name":"Fellowship/Awards","color":"#29b6f6","items":[{"name":"JSPS Japan","date":"2027-02-01"},{"name":"ND Provost's PDF in Eng.","date":"2026-12-15"},{"name":"Harvard Environmental Fellows","date":"2026-12-01"},{"name":"RAMI Rice","date":"2026-12-11"}]},{"name":"Admin","color":"#ffa726","items":[{"name":"Award 1","date":"2026-12-01"},{"name":"Award 2","date":"2027-01-20"}]},{"name":"Confs","color":"#ec407a","items":[{"name":"Con 1","date":"2026-11-30"},{"name":"Con 2","date":"2027-01-05"},{"name":"Con 3","date":"2027-01-05"},{"name":"Con 4","date":"2027-01-05"}]},{"name":"Submissions","color":"#66bb6a","items":[{"name":"Paper 1","date":"2026-12-10","url":"https://example.com"},{"name":"Paper 2","date":"2027-02-01"}]},{"name":"R-to-R","color":"#ab47bc","items":[{"name":"Reviews 1","date":"2026-11-30"},{"name":"Reviews 2","date":"2027-01-05"}]}]};
+  var ROW = 28, GUT = 64, COLW = 25, DAY = 86400000;
   var PALETTE = ['#29b6f6', '#ffa726', '#66bb6a', '#ab47bc', '#ec407a', '#8d6e63'];
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var root = document.getElementById('dw');
@@ -122,7 +122,7 @@ function buildWaterfall() {
   body.style.height = (n * ROW) + 'px';
   cats.forEach(function (c) {
     var k = c.items.length;
-    var minW = Math.max(k * COLW + 16, 110);
+    var minW = Math.max(k * COLW + 16, 90);
     minTotal += minW;
     var head = el('div', 'dw-cat');
     head.style.flex = k + ' 1 0px';
@@ -151,7 +151,7 @@ function buildWaterfall() {
     rows.appendChild(row);
   }
   var tl = el('div', 'dw-today');
-  tl.style.top = (todayY - 1) + 'px';
+  tl.style.top = (todayY + 8) + 'px';
   body.appendChild(rows);
   body.appendChild(box);
   body.appendChild(tl);
