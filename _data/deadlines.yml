@@ -13,6 +13,9 @@ categories:
         date: "2026-12-01"
       - name: RAMI Rice
         date: "2026-12-11"
+      - name: UofT Research Excellence Postdoctoral Fellowship
+        date: "2026-12-11"
+        url: "https://www.sgs.utoronto.ca/awards/research-excellence-postdoctoral-fellows-program/"
 
   - name: Admin
     color: "#ffa726"
